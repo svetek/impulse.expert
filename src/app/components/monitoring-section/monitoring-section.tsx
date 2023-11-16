@@ -9,7 +9,7 @@ export default function MonitoringSection() {
       <div className='container'>
         <div className='row'>
           <h2 className='header font-bold text-center mb-8 pr-8 pl-8'>
-            Always Alert, Always Secure
+            Always Alert. Always Secure.
           </h2>
 
           <p className='description text-center pr-8 pl-8'>

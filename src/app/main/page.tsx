@@ -38,16 +38,18 @@ export default function Page() {
           </button>
         </section> */}
 
-        {/* <section>
+        <section>
           <NodesSection />
-        </section> */}
+        </section>
 
         {/* <section className='bg-gray-100 p-12'>
           <h2 className='text-2xl font-bold mb-2'>About Us</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         </section> */}
 
-        <MonitoringSection />
+        <section>
+          <MonitoringSection />
+        </section>
       </main>
       {/* Footer */}
       {/* <footer className='bg-gray-700 text-white p-4 text-center'>

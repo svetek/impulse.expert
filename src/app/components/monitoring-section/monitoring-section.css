@@ -37,7 +37,8 @@
 }
 
 .header {
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(3rem, 4vw, 4em);
+  text-transform: uppercase;
 }
 
 .description {

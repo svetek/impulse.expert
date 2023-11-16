@@ -1,4 +1,5 @@
 import MonitoringSection from './components/monitoring-section/monitoring-section';
+import NodesSection from './components/nodes-section/nodes.section';
 
 export default function Page() {
   return (
@@ -17,6 +18,10 @@ export default function Page() {
           <h2 className='text-3xl font-bold mt-4'>Under Construction</h2>
         </div>
       </section>
+
+      <section>
+          <NodesSection />
+        </section>
 
       <section>
         <MonitoringSection />
