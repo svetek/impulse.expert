@@ -1,5 +1,6 @@
 import MonitoringSection from '../components/monitoring-section/monitoring-section';
 import NodesSection from '../components/nodes-section/nodes.section';
+import ThemeSwitcher from './components/theme-switcher';
 
 export default function Page() {
   return (
@@ -24,6 +25,7 @@ export default function Page() {
       </header> */}
       {/* Main Content */}
       <main className='main'>
+      <ThemeSwitcher/>
         {/* <section
           className='bg-cover bg-center text-white p-12 text-center'
           style={{ backgroundImage: "url('/hero-bg.jpg')" }}

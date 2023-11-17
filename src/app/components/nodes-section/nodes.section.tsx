@@ -4,7 +4,7 @@ import { NodeCard, mainnetNodes, testnetNodes } from './constants/nodes';
 
 export default function NodesSection() {
   return (
-    <div className='pb-8 pt-8 bg-blue-50 '>
+    <div className='pb-8 pt-8 bg-blue-50 dark:bg-gray-900'>
       {getNodesContainer('Our Mainnets', mainnetNodes)}
       {getNodesContainer('Our Testnets', testnetNodes)}
     </div>
@@ -14,14 +14,14 @@ export default function NodesSection() {
 const getNodesContainer = (title: string, nodes: NodeCard[]) => {
   return (
     <div className='container max-w-[100%] flex flex-col w-full pb-8 pt-8'>
-      <h3 className='text-center text-3xl font-semibold py-3 uppercase text-slate-600	'>
+      <h3 className='text-center text-3xl font-semibold py-3 uppercase text-slate-600 dark:text-slate-300'>
         {title}
       </h3>
       <div className='flex justify-center flex-wrap w-4/6'>
         {nodes.map((block, index) => (
           <div
             key={index}
-            className='shadow-lg hover:shadow-2xl rounded-xl bg-white p-5 m-3 mb-3 flex flex-col items-center text-center w-64 h-auto'
+            className='shadow-lg hover:shadow-2xl rounded-xl bg-white dark:bg-gray-800 p-5 m-3 mb-3 flex flex-col items-center text-center w-64 h-auto dark:shadow-dark hover:dark:shadow-dark-lg'
           >
             <Link href={block.link} target='_blank'>
               <img
@@ -29,14 +29,14 @@ const getNodesContainer = (title: string, nodes: NodeCard[]) => {
                 src={block.logo}
                 alt={block.title}
               />
-              <p className='mt-4 font-medium text-lg text-gray-900'>
+              <p className='mt-4 font-medium text-lg text-gray-900 dark:text-slate-300'>
                 {block.title}
               </p>
-              <p className='mt-2 text-sm text-gray-600'>{block.description}</p>
+              <p className='mt-2 text-sm text-gray-600 dark:text-gray-400'>{block.description}</p>
             </Link>
             {block.explorer && (
               <Link
-                className='mt-4 inline-block bg-grey-50 border border-gray-400 text-slate-600 py-1 px-3 rounded'
+                className='mt-4 inline-block border border-gray-400 text-slate-600 bg-grey-50 dark:border-gray-500 dark:text-gray-300 py-1 px-3 rounded'
                 href={block.explorer}
                 target='_blank'
               >
