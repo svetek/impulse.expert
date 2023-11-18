@@ -10,7 +10,7 @@
   text-shadow: none;
 
   padding-bottom: 155px;
-  padding-top: 180px;
+  padding-top: clamp(100px, 10rem, 180px);
 
 }
 
@@ -37,10 +37,10 @@
 }
 
 .header {
-  font-size: clamp(3rem, 4vw, 4em);
+  font-size: clamp(2rem, 4vw, 4em);
   text-transform: uppercase;
 }
 
 .description {
-  font-size: clamp(1.5rem, 2vw, 3rem);
+  font-size: clamp(1rem, 2vw, 3rem);
 }

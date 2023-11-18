@@ -34,7 +34,7 @@ export default function ThemeSwitcher() {
 
   const getImage = () => (
     <Image
-      className='rounded-full h-125 w-125 object-contain drop-shadow-[0_0px_20px_rgba(245,120,3,1)] dark:drop-shadow-[0_0px_20px_rgba(185,185,185,0.69)]'
+      className='rounded-full theme-switcher-image object-contain drop-shadow-[0_0px_20px_rgba(245,120,3,1)] dark:drop-shadow-[0_0px_20px_rgba(185,185,185,0.69)]'
       width='125'
       height='125'
       src={
@@ -49,7 +49,7 @@ export default function ThemeSwitcher() {
   return (
     <button
       type='button'
-      className='bg-transparent button'
+      className='bg-transparent theme-switcher-button'
       onClick={handleThemeChange}
     >
       {getImage()}

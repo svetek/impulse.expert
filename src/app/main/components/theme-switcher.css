@@ -1,5 +1,11 @@
-.button {
+.theme-switcher-button {
   position: fixed;
-  right: 50px;
-  top: 50px;
+  right: clamp(1rem, 5vw, 50px);
+  top: clamp(1rem, 5vw, 50px);
+  z-index: 1000;
+}
+
+.theme-switcher-image {
+  height: clamp(3rem, 10vw, 125px);
+  width: clamp(3rem, 10vw, 125px);
 }
