@@ -14,7 +14,7 @@ export const mainnetNodes: Array<NodeCard> = [
     logo: './images/nodes/cardano_logo.png',
     title: 'Cardano',
     explorer:
-      'https://cexplorer.io/pool/pool1q6lzp5x6tqg04chsxakupgq6x829nsx2dk5w8h043fnajm8d3uj',
+      'https://adastat.net/pools/06be20d0da5810fae2f0376dc0a01a31d459c0ca6da8e3ddf58a67d9',
     link: 'https://cardano.org/',
     description: 'One of the biggest cryptocurrencies by market cap',
   },
@@ -100,6 +100,8 @@ export const testnetNodes: Array<NodeCard> = [
     logo: './images/nodes/mantra.svg',
     title: 'Mantra',
     link: 'https://www.mantraomniverse.com/',
+    explorer:
+      'https://explorer.testnet.mantrachain.io/mantrachain/validators/mantravaloper1srul3v67t2szqc89me77e0xeagzxua2xzacpv9',
     description:
       'MANTRA is a first of its kind, vertically-integrated and regulatory compliant blockchain ecosystem',
   },
@@ -119,4 +121,3 @@ export const testnetNodes: Array<NodeCard> = [
     description: 'Community-run network, which has a finite total supply',
   },
 ];
-// testnet убрать: celectia, OKP4, добавить MANTRA, Evmos
