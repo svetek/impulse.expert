@@ -1,11 +1,16 @@
 .theme-switcher-button {
-  position: fixed;
-  right: clamp(1rem, 5vw, 50px);
-  top: clamp(1rem, 5vw, 50px);
+  /* position: fixed; */
+  /* right: clamp(1rem, 2rem, 40px);
+  top: clamp(4rem, 6rem, 90px); */
   z-index: 1000;
 }
 
 .theme-switcher-image {
-  height: clamp(3rem, 10vw, 125px);
-  width: clamp(3rem, 10vw, 125px);
+  height: clamp(1rem, 4vw, 50px);
+  width: auto;
+}
+
+.theme-switcher-image:hover {
+  height: clamp(3rem, 8vw, 80px);
+  width: auto;
 }

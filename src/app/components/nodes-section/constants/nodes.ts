@@ -27,6 +27,23 @@ export const mainnetNodes: Array<NodeCard> = [
     description: 'Delivers secure cross-chain communication for Web3',
   },
   {
+    logo: './images/nodes/evmos.png',
+    title: 'Evmos',
+    link: 'https://evmos.org',
+    explorer:
+      'https://www.mintscan.io/evmos/validators/evmosvaloper16d9wa7uzahhmr9ekahyaejr9sdpmj9glg4vurm',
+    description:
+      'A one-stop, highly personalized access point to discover unique Web3 apps built on Evmos',
+  },
+  {
+    logo: './images/nodes/islamicCoin.png',
+    title: 'Islamic Coin',
+    explorer:
+      'https://shell.haqq.network/staking/validator/haqqvaloper1zenrae0nqd0mclna6an3059z66tlrzar5xmkzp',
+    link: 'https://islamiccoin.net',
+    description: 'Community-run network, which has a finite total supply',
+  },
+  {
     logo: './images/nodes/juno.png',
     title: 'Starknet Juno',
     link: 'https://www.starknet.io/en',
@@ -41,21 +58,6 @@ export const mainnetNodes: Array<NodeCard> = [
     description:
       'Starknet is the secure scaling technology bringing Ethereum’s benefits to the world',
   },
-  {
-    logo: './images/nodes/evmos.png',
-    title: 'Evmos',
-    link: 'https://evmos.org',
-    description:
-      'A one-stop, highly personalized access point to discover unique Web3 apps built on Evmos',
-  },
-  {
-    logo: './images/nodes/islamicCoin.png',
-    title: 'Islamic Coin',
-    explorer:
-      'https://shell.haqq.network/staking/validator/haqqvaloper1zenrae0nqd0mclna6an3059z66tlrzar5xmkzp',
-    link: 'https://islamiccoin.net',
-    description: 'Community-run network, which has a finite total supply',
-  },
 ];
 
 export const testnetNodes: Array<NodeCard> = [
@@ -66,21 +68,7 @@ export const testnetNodes: Array<NodeCard> = [
     explorer:
       'https://lava.explorers.guru/validator/lava@valoper1q7jyftyahuf66jefc36254rldk6je9xkaaseh4',
     description:
-      'Lava pairs Providers with Applications for scalable, private and uncensored access to Web3',
-  },
-  {
-    logo: './images/nodes/massa.jpg',
-    title: 'Massa',
-    link: 'https://massa.net/',
-    description:
-      'Truly decentralized blockchain controlled by thousands of people.',
-  },
-  {
-    logo: './images/nodes/masa-fin.png',
-    title: 'Masa Finance',
-    link: 'https://www.masa.finance/',
-    description:
-      'Masa is on a mission to bring the next 1 billion people to web3',
+      'Pairs Providers with DApps for scalable, private and uncensored access to Web3',
   },
   {
     logo: './images/nodes/axelar.jpg',
@@ -94,6 +82,8 @@ export const testnetNodes: Array<NodeCard> = [
     logo: './images/nodes/nibi.png',
     title: 'Nibiru',
     link: 'https://nibiru.fi/',
+    explorer:
+      'https://explorer.nibiru.fi/nibiru-itn-3/staking/nibivaloper1f20ayh6pr2yw4g9n9mr76acmj8cxv3jeeurwsc',
     description: 'Sovereign blockchain, Cosmos Ecosystem family member',
   },
   {
@@ -103,7 +93,15 @@ export const testnetNodes: Array<NodeCard> = [
     explorer:
       'https://explorer.testnet.mantrachain.io/mantrachain/validators/mantravaloper1srul3v67t2szqc89me77e0xeagzxua2xzacpv9',
     description:
-      'MANTRA is a first of its kind, vertically-integrated and regulatory compliant blockchain ecosystem',
+      'Vertically-integrated and regulatory compliant blockchain ecosystem',
+  },
+  {
+    logo: './images/nodes/islamicCoin.png',
+    title: 'Islamic Coin',
+    explorer:
+      'https://testnet.ping.pub/haqq/staking/haqqvaloper1vzqw946xv3lgsvdyw08pkgkqhuennjv48rqdev',
+    link: 'https://islamiccoin.net',
+    description: 'Community-run network, which has a finite total supply',
   },
   {
     logo: './images/nodes/evmos.png',
@@ -113,11 +111,17 @@ export const testnetNodes: Array<NodeCard> = [
       'A one-stop, highly personalized access point to discover unique Web3 apps built on Evmos',
   },
   {
-    logo: './images/nodes/islamicCoin.png',
-    title: 'Islamic Coin',
-    explorer:
-      'https://testnet.ping.pub/haqq/staking/haqqvaloper1vzqw946xv3lgsvdyw08pkgkqhuennjv48rqdev',
-    link: 'https://islamiccoin.net',
-    description: 'Community-run network, which has a finite total supply',
+    logo: './images/nodes/massa.jpg',
+    title: 'Massa',
+    link: 'https://massa.net/',
+    description:
+      'Truly decentralized blockchain controlled by thousands of people',
+  },
+  {
+    logo: './images/nodes/masa-fin.png',
+    title: 'Masa Finance',
+    link: 'https://www.masa.finance/',
+    description:
+      'The mission is to bring the next 1 billion people to Web3',
   },
 ];

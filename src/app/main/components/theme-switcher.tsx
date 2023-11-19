@@ -8,6 +8,10 @@ export default function ThemeSwitcher() {
   const [theme, setTheme] = useState<string | null>(null);
 
   useEffect(() => {
+    const isServer = typeof window === 'undefined';
+    const WOW = !isServer ? require('wow.js') : null;
+    new WOW().init();
+
     const storedTheme =
       localStorage.getItem('theme') ||
       (window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -34,9 +38,10 @@ export default function ThemeSwitcher() {
 
   const getImage = () => (
     <Image
-      className='rounded-full theme-switcher-image object-contain drop-shadow-[0_0px_20px_rgba(245,120,3,1)] dark:drop-shadow-[0_0px_20px_rgba(185,185,185,0.69)]'
+      className='rounded-full theme-switcher-image object-contain drop-shadow-[0_0px_10px_rgba(245,120,3,1)] dark:drop-shadow-[0_0px_10px_rgba(185,185,185,0.69)]'
       width='125'
       height='125'
+      title={`Change theme to ${theme === 'dark' ? 'light' : 'dark'}`}
       src={
         theme === 'dark'
           ? './images/theme/dark5.png'

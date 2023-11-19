@@ -1,3 +1,5 @@
+import Footer from '../components/footer/footer';
+import Header from '../components/header/header';
 import MonitoringSection from '../components/monitoring-section/monitoring-section';
 import NodesSection from '../components/nodes-section/nodes.section';
 import ThemeSwitcher from './components/theme-switcher';
@@ -5,6 +7,7 @@ import ThemeSwitcher from './components/theme-switcher';
 export default function Page() {
   return (
     <>
+      <Header />
       {/* <header className='bg-gray-800 text-white p-4'>
         <div className='container mx-auto flex justify-between items-center'>
           <div className='logo'>
@@ -25,7 +28,7 @@ export default function Page() {
       </header> */}
       {/* Main Content */}
       <main className='main'>
-      <ThemeSwitcher/>
+        <ThemeSwitcher />
         {/* <section
           className='bg-cover bg-center text-white p-12 text-center'
           style={{ backgroundImage: "url('/hero-bg.jpg')" }}
@@ -49,14 +52,9 @@ export default function Page() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         </section> */}
 
-        <section>
-          <MonitoringSection />
-        </section>
+        <MonitoringSection />
       </main>
-      {/* Footer */}
-      {/* <footer className='bg-gray-700 text-white p-4 text-center'>
-        <p>Impulse</p>
-      </footer> */}
+      <Footer />
     </>
   );
 }

@@ -1,3 +1,4 @@
+'use client';
 import './monitoring-section.css';
 
 export default function MonitoringSection() {
@@ -8,14 +9,14 @@ export default function MonitoringSection() {
     >
       <div className='container'>
         <div className='row'>
-          <h2 className='header font-bold text-center mb-8 pr-8 pl-8 dark:text-slate-300'>
+          <h2 className="font-['KdamThmorPro'] tracking-wider header font-bold text-center mb-8 pr-8 pl-8 dark:text-slate-300 wow animate__animated animate__fadeInUp">
             Always Alert. Always Secure.
           </h2>
 
-          <p className='description text-center pr-8 pl-8 dark:text-slate-300'>
+          <p className='description text-center pr-8 pl-8 dark:text-slate-300 wow animate__animated animate__fadeInUp'>
             Ensuring nodes are always up
           </p>
-          <p className='description text-center mb-4 pr-8 pl-8 dark:text-slate-300'>
+          <p className='description text-center mb-4 pr-8 pl-8 dark:text-slate-300 wow animate__animated animate__fadeInUp'>
             with 24/7 vigilant monitoring and alerting systems
           </p>
         </div>
