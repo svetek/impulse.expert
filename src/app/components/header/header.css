@@ -1,3 +1,7 @@
 .header {
   z-index: 1000;
 }
+
+.header-links {
+  font-size: clamp(0.5rem, 3vw, 2rem);
+}

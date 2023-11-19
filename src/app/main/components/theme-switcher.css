@@ -6,7 +6,7 @@
 }
 
 .theme-switcher-image {
-  height: clamp(1rem, 4vw, 50px);
+  height: clamp(2rem, 4vw, 50px);
   width: auto;
 }
 
