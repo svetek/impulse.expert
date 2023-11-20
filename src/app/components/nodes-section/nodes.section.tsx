@@ -1,11 +1,13 @@
 'use client';
+
+import Image from 'next/image';
 import './nodes-section.css';
 import Link from 'next/link';
 import { NodeCard, mainnetNodes, testnetNodes } from './constants/nodes';
 
 export default function NodesSection() {
   return (
-    <div className='pb-8 pt-20'>
+    <div className='pb-8'>
       {getNodesContainer('Our Mainnets', mainnetNodes, 'mainnets')}
       {getNodesContainer('Our Testnets', testnetNodes, 'testnets')}
     </div>
@@ -19,11 +21,11 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
       className='container max-w-[100%] 
         flex flex-col w-full pb-8 pt-8 scroll-mt-20'
     >
-      <h3 className="font-['KdamThmorPro'] tracking-widest text-center 
+      <h2 className="font-['KdamThmorPro'] tracking-widest text-center 
         text-3xl font-semibold py-3 uppercase text-slate-600 dark:text-slate-300 
         wow animate__animated animate__fadeInDown">
         {title}
-      </h3>
+      </h2>
       <div className='flex justify-center flex-wrap custom-container'>
         {nodes.map((block, index) => (
           <div
@@ -38,7 +40,9 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
           wow animate__animated animate__fadeInUp'
           >
             <Link href={block.link} target='_blank'>
-              <img
+              <Image
+                width='200'
+                height='200'
                 className='w-full rounded-full'
                 src={block.logo}
                 alt={block.title}

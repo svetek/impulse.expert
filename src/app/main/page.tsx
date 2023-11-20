@@ -2,7 +2,7 @@ import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
 import MonitoringSection from '../components/monitoring-section/monitoring-section';
 import NodesSection from '../components/nodes-section/nodes.section';
-import ThemeSwitcher from './components/theme-switcher';
+import ServerSection from '../components/server-section/server.section';
 
 export default function Page() {
   return (
@@ -28,7 +28,6 @@ export default function Page() {
       </header> */}
       {/* Main Content */}
       <main className='main'>
-        <ThemeSwitcher />
         {/* <section
           className='bg-cover bg-center text-white p-12 text-center'
           style={{ backgroundImage: "url('/hero-bg.jpg')" }}
@@ -42,6 +41,9 @@ export default function Page() {
             Get Started
           </button>
         </section> */}
+        <section>
+          <ServerSection />
+        </section>
 
         <section>
           <NodesSection />

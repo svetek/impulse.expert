@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import ThemeSwitcher from '../../main/components/theme-switcher';
 import './header.css';
 
@@ -29,8 +30,10 @@ export default function Header() {
       '
     >
       <a href='/' className='flex items-center justify-center w-full md:w-auto'>
-        <img
-          className='block h-20 w-auto drop-shadow-[0_0px_10px_rgba(100,100,100,0.85)] dark:drop-shadow-[0_0px_10px_rgba(185,185,185,0.69)]'
+        <Image
+          width='80'
+          height='80'
+          className='block h-20 w-auto drop-shadow-[0_0px_5px_rgba(100,100,100,0.85)] dark:drop-shadow-[0_0px_5px_rgba(185,185,185,0.69)]'
           src='/logo.png'
           alt='Logo'
         />

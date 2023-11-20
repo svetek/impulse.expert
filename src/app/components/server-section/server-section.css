@@ -1,0 +1,4 @@
+.server-image {
+  height: clamp(300px, 600px, 80vw);
+  width: auto;
+}

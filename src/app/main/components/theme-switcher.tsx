@@ -1,11 +1,12 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import Image from 'next/image';
 import './theme-switcher.css';
+import { ThemeContext } from '../../contexts/ThemeContext';
 
 export default function ThemeSwitcher() {
-  const [theme, setTheme] = useState<string | null>(null);
+  const { theme, setTheme } = useContext(ThemeContext);
 
   useEffect(() => {
     const isServer = typeof window === 'undefined';
@@ -19,7 +20,7 @@ export default function ThemeSwitcher() {
         : 'light');
     setTheme(storedTheme);
     updateThemeClass(storedTheme);
-  }, []);
+  }, [setTheme]);
 
   const handleThemeChange = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
