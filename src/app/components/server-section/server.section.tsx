@@ -40,13 +40,18 @@ flex flex-col w-full pb-4 pt-24 scroll-mt-20'
             Experience exceptional computing power with our dedicated server,
             tailored for demanding workloads
           </p>
-          <ul className='mx-8 list-inside text-2xl list-none'>
+          <ul className='mx-16 list-inside text-2xl list-disc'>
             <li className='mb-2 wow animate__animated animate__fadeInUp animate__delay-1s'>
-              <span className='font-semibold '>CPU(s):</span> 32
+              <span className='font-semibold '>CPUs:</span> 32
             </li>
             <li className='mb-2 wow animate__animated animate__fadeInUp animate__delay-1s'>
-              <span className='font-semibold'>Specifications:</span> 32 CPUs,
-              128GB RAM, 6TB NVMe Storage, 1Gb/s Network Speed
+              <span className='font-semibold'>RAM:</span> 128GB
+            </li>
+            <li className='mb-2 wow animate__animated animate__fadeInUp animate__delay-1s'>
+              <span className='font-semibold'>Storage:</span> 6TB NVMe
+            </li>
+            <li className='mb-2 wow animate__animated animate__fadeInUp animate__delay-1s'>
+              <span className='font-semibold'>Network Speed:</span> 1Gb/s
             </li>
             <li className='mb-2 wow animate__animated animate__fadeInUp animate__delay-1s'>
               <span className='font-semibold'>Operating System:</span> Ubuntu

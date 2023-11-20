@@ -34,7 +34,7 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
           bg-white dark:bg-slate-900
           hover:shadow-xl hover:dark:shadow-dark-lg
           hover:bg-slate-100 hover:dark:bg-slate-800
-          hover:border-2 hover:border-slate-200
+          hover:border-2 hover:border-slate-300
           hover:dark:border-slate-600
           shadow-lg dark:shadow-dark 
           wow animate__animated animate__fadeInUp'
