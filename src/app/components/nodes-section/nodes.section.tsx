@@ -21,9 +21,11 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
       className='container max-w-[100%] 
         flex flex-col w-full pb-8 pt-8 scroll-mt-20'
     >
-      <h2 className="font-['KdamThmorPro'] tracking-widest text-center 
+      <h2
+        className="font-['KdamThmorPro'] tracking-widest text-center 
         text-3xl font-semibold py-3 uppercase text-slate-600 dark:text-slate-300 
-        wow animate__animated animate__fadeInDown">
+        wow animate__animated animate__fadeInDown select-none"
+      >
         {title}
       </h2>
       <div className='flex justify-center flex-wrap custom-container'>
@@ -39,21 +41,34 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
           shadow-lg dark:shadow-dark 
           wow animate__animated animate__fadeInUp'
           >
-            <Link href={block.link} target='_blank'>
-              <Image
-                width='200'
-                height='200'
-                className='w-full rounded-full'
-                src={block.logo}
-                alt={block.title}
-              />
-              <p className='mt-4 font-medium text-lg text-gray-900 dark:text-slate-300 h-[3em] overflow-hidden'>
-                {block.title}
-              </p>
-              <p className='mt-2 text-sm text-gray-600 dark:text-gray-400 h-[5em] overflow-hidden'>
-                {block.description}
-              </p>
-            </Link>
+            <Image
+              width='200'
+              height='200'
+              className='w-full rounded-full'
+              src={block.logo}
+              alt={block.title}
+            />
+            <p className='mt-4 font-medium text-lg text-gray-900 dark:text-slate-300 h-[3em] overflow-hidden'>
+              {block.title}
+            </p>
+            <p className='text-sm text-gray-600 dark:text-gray-400 h-[5em] overflow-hidden select-none'>
+              {block.description}
+            </p>
+
+            {block.link && (
+              <Link
+                href={block.link}
+                target='_blank'
+                className='mt-4 inline-block border border-gray-400 text-slate-600 
+            bg-grey-50 dark:border-gray-500 
+            dark:text-gray-300 py-1 px-3 rounded
+            hover:bg-slate-200 hover:dark:bg-slate-950
+            wow animate__animated animate__pulse animate__repeat-3'
+              >
+                Official Site
+              </Link>
+            )}
+
             {block.explorer && (
               <Link
                 className='mt-4 inline-block border border-gray-400 text-slate-600 
@@ -64,7 +79,7 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
                 href={block.explorer}
                 target='_blank'
               >
-                Explorer
+                Explore
               </Link>
             )}
           </div>

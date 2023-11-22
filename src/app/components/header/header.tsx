@@ -5,12 +5,8 @@ import './header.css';
 export default function Header() {
   const links = [
     {
-      title: 'Mainnets',
+      title: 'Our Projects',
       link: '#mainnets',
-    },
-    {
-      title: 'Testnets',
-      link: '#testnets',
     },
   ];
   return (

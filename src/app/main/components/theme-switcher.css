@@ -2,7 +2,7 @@
   /* position: fixed; */
   /* right: clamp(1rem, 2rem, 40px);
   top: clamp(4rem, 6rem, 90px); */
-  z-index: 1000;
+  z-index: 3;
 }
 
 .theme-switcher-image {

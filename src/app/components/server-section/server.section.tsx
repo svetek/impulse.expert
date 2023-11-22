@@ -18,7 +18,7 @@ flex flex-col w-full pb-4 pt-24 scroll-mt-20'
     text-3xl font-semibold py-3 px-16 uppercase text-slate-600 dark:text-slate-300 
     wow animate__animated animate__fadeInDown pt-16"
       >
-        High-Performance Dedicated Server
+        High-Performance Dedicated Servers
       </h2>
       <div className='flex flex-col justify-center lg:flex-row px-8'>
         <div className='flex justify-center items-center animate__animated animate__fadeInLeft'>
@@ -35,10 +35,9 @@ flex flex-col w-full pb-4 pt-24 scroll-mt-20'
           />
         </div>
 
-        <div className='lg:flex-1 lg:max-w-[50%] flex flex-col justify-center wow animate__animated animate__fadeInRight text-gray-800 dark:text-slate-300'>
+        <div className='select-none lg:flex-1 lg:max-w-[50%] flex flex-col justify-center wow animate__animated animate__fadeInRight text-gray-800 dark:text-slate-300'>
           <p className='mx-8 mb-4 text-2xl'>
-            Experience exceptional computing power with our dedicated server,
-            tailored for demanding workloads
+            Experience Unmatched Performance: Over 20 Dedicated Servers Across 4 Countries for Demanding Workloads
           </p>
           <ul className='mx-16 list-inside text-2xl list-disc'>
             <li className='mb-2 wow animate__animated animate__fadeInUp animate__delay-1s'>
