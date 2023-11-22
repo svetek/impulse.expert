@@ -12,7 +12,9 @@ export default function ThemeSwitcher() {
     const isServer = typeof window === 'undefined';
     const WOW = !isServer ? require('wow.js') : null;
     new WOW().init();
+  });
 
+  useEffect(() => {
     const storedTheme =
       localStorage.getItem('theme') ||
       (window.matchMedia('(prefers-color-scheme: dark)').matches
