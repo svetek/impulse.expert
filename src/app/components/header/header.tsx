@@ -1,9 +1,14 @@
 import Image from 'next/image';
 import ThemeSwitcher from '../../main/components/theme-switcher';
+import { FaGithub, FaMedium, FaTwitter, FaDocker } from 'react-icons/fa';
 import './header.css';
 
 export default function Header() {
   const links = [
+    {
+      title: 'About Us',
+      link: '#about',
+    },
     {
       title: 'Our Projects',
       link: '#mainnets',
@@ -44,11 +49,40 @@ export default function Header() {
             <a
               key={link}
               href={link}
-              className="header-links font-['KdamThmorPro'] tracking-widest tracking-wide text-gray-800 dark:text-slate-300 px-2 lg:px-3 py-2 rounded-md font-semibold"
+              className="header-link font-['KdamThmorPro'] tracking-widest tracking-wide text-gray-800 dark:text-slate-300 px-2 lg:px-3 py-2 rounded-md font-semibold"
             >
               {title}
             </a>
           ))}
+
+          <a
+            href='https://github.com/svetek'
+            className='header-link text-gray-800 dark:text-slate-300'
+            target='_blank'
+          >
+            <FaGithub className='heder-icon h-5 w-5' />
+          </a>
+          <a
+            href='https://hub.docker.com/u/svetekllc'
+            className='header-link text-gray-800 dark:text-slate-300'
+            target='_blank'
+          >
+            <FaDocker className='heder-icon h-5 w-5' />
+          </a>
+          <a
+            href='https://medium.com/@michael_47027'
+            className='header-link text-gray-800 dark:text-slate-300'
+            target='_blank'
+          >
+            <FaMedium className='heder-icon h-5 w-5' />
+          </a>
+          <a
+            href='https://twitter.com/SvetekLLC'
+            className='header-link text-gray-800 dark:text-slate-300'
+            target='_blank'
+          >
+            <FaTwitter className='heder-icon h-5 w-5' />
+          </a>
           <ThemeSwitcher />
         </div>
       </nav>

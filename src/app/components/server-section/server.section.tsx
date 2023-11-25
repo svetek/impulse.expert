@@ -11,12 +11,12 @@ export default function ServerSection() {
   return (
     <article
       className='container justify-center max-w-[100%] 
-flex flex-col w-full pb-4 pt-24 scroll-mt-20'
+flex flex-col w-full pb-4 scroll-mt-20'
     >
       <h2
         className="font-['KdamThmorPro'] tracking-widest text-center 
     text-3xl font-semibold py-3 px-16 uppercase text-slate-600 dark:text-slate-300 
-    wow animate__animated animate__fadeInDown pt-16"
+    wow animate__animated animate__fadeInDown pt-16 select-none"
       >
         High-Performance Dedicated Servers
       </h2>
@@ -37,7 +37,8 @@ flex flex-col w-full pb-4 pt-24 scroll-mt-20'
 
         <div className='select-none lg:flex-1 lg:max-w-[50%] flex flex-col justify-center wow animate__animated animate__fadeInRight text-gray-800 dark:text-slate-300'>
           <p className='mx-8 mb-4 text-2xl'>
-            Experience Unmatched Performance: Over 20 Dedicated Servers Across 4 Countries for Demanding Workloads
+            Experience Unmatched Performance: Over 20 Dedicated Servers Across 4
+            Countries for Demanding Workloads
           </p>
           <ul className='mx-16 list-inside text-2xl list-disc'>
             <li className='mb-2 wow animate__animated animate__fadeInUp animate__delay-1s'>

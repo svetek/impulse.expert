@@ -1,3 +1,4 @@
+import AboutSection from './components/about-us-section/about-us.section';
 import Footer from './components/footer/footer';
 import Header from './components/header/header';
 import MonitoringSection from './components/monitoring-section/monitoring-section';
@@ -10,6 +11,9 @@ export default function Page() {
     <ThemeProvider>
       <Header />
       <main className='main'>
+        <section>
+          <AboutSection />
+        </section>
 
         <section>
           <ServerSection />
