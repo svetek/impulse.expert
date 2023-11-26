@@ -185,7 +185,7 @@ export default function HeadSection() {
   if (isFirefox || isMobile) {
     return (
       <Image
-        className='gif'
+        className='gif px-10 lg:px-0'
         width={600}
         height={600}
         src={
