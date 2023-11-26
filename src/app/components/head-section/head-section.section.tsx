@@ -28,6 +28,7 @@ export default function HeadSection() {
         };
 
         p5.setup = () => {
+          p5.pixelDensity(1);
           const canvas = p5.createCanvas(600, 600);
           canvas.parent('head');
 
