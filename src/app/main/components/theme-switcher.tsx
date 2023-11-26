@@ -11,7 +11,9 @@ export default function ThemeSwitcher() {
   useEffect(() => {
     const isServer = typeof window === 'undefined';
     const WOW = !isServer ? require('wow.js') : null;
-    new WOW().init();
+    new WOW({
+      mobile: false,
+    }).init();
   });
 
   useEffect(() => {

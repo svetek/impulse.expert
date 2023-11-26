@@ -39,3 +39,10 @@ body {
 .logo {
   width: clamp(30vw, 20em, 40vw);
 }
+
+@media (prefers-reduced-motion) {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
