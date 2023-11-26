@@ -37,25 +37,25 @@ export default function RootLayout({
         ></meta>
         <meta
           name='twitter:image'
-          content='https://impulse.expert/card.jpg'
+          property='https://impulse.expert/card.jpg'
         ></meta>
 
         {/* OG */}
-        <meta name='og:image' content='https://impulse.expert/card.jpg'></meta>
+        <meta property='og:image' content='https://impulse.expert/card.jpg'></meta>
         <meta
-          name='og:title'
+          property='og:title'
           content='Impulse. Web3 Nodes Staking Services'
         ></meta>
         <meta
-          name='og:description'
+          property='og:description'
           content='Specializing in blockchain node operations, we offer secure,
           high-quality staking services. Our mission is to leverage our
           technology experience to ensure a reliable, decentralized
           digital future'
         ></meta>
-        <meta name='og:locale' content='en_US'></meta>
-        <meta name='og:site_name' content='Impulse'></meta>
-        <meta name='og:image:alt' content='Impulse. Web3 Nodes Staking Services'></meta>
+        <meta property='og:locale' content='en_US'></meta>
+        <meta property='og:site_name' content='Impulse'></meta>
+        <meta property='og:image:alt' content='Impulse. Web3 Nodes Staking Services'></meta>
         <meta property="og:type" content="website"></meta>
       </head>
 
