@@ -5,8 +5,9 @@ import './ui/globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Impulse',
-  description: 'Impulse',
+  title: 'Impulse. Web3 Nodes Staking Services',
+  description: `Specializing in blockchain node operations, we offer secure, high-quality Web3 staking services. 
+    Our mission is to leverage our technology experience to ensure a reliable, decentralized digital future`,
 };
 
 export default function RootLayout({
@@ -41,7 +42,10 @@ export default function RootLayout({
         ></meta>
 
         {/* OG */}
-        <meta property='og:image' content='https://impulse.expert/card.jpg'></meta>
+        <meta
+          property='og:image'
+          content='https://impulse.expert/card.jpg'
+        ></meta>
         <meta
           property='og:title'
           content='Impulse. Web3 Nodes Staking Services'
@@ -55,8 +59,11 @@ export default function RootLayout({
         ></meta>
         <meta property='og:locale' content='en_US'></meta>
         <meta property='og:site_name' content='Impulse'></meta>
-        <meta property='og:image:alt' content='Impulse. Web3 Nodes Staking Services'></meta>
-        <meta property="og:type" content="website"></meta>
+        <meta
+          property='og:image:alt'
+          content='Impulse. Web3 Nodes Staking Services'
+        ></meta>
+        <meta property='og:type' content='website'></meta>
       </head>
 
       <body className={inter.className}>{children}</body>
