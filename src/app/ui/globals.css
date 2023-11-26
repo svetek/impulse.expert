@@ -39,21 +39,3 @@ body {
 .logo {
   width: clamp(30vw, 20em, 40vw);
 }
-
-#head {
-  width: 600px;
-  height: 600px;
-}
-/* 
-.head:has(canvas) {
-  @apply container;
-  @apply justify-center;
-  @apply max-w-[100%];
-  @apply flex;
-  @apply flex-col;
-  @apply w-full;
-  @apply pb-4;
-  @apply pt-24;
-  @apply scroll-mt-20;
-} 
-*/

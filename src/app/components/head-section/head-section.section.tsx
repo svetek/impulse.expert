@@ -3,18 +3,22 @@
 import P5 from 'p5';
 import { useContext, useEffect } from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext';
+import Image from 'next/image';
 import './head-section.section.css';
 
 export default function HeadSection() {
   const { theme } = useContext(ThemeContext);
+  const isFirefox =
+    typeof navigator !== 'undefined' && navigator.userAgent.includes('Firefox');
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 1000;
 
   useEffect(() => {
     let sketchInstance: P5;
 
-    if (typeof window !== 'undefined' && window.innerWidth > 1000) {
+    if (!isFirefox && !isMobile) {
       const sketch = (p5: P5) => {
         let group: any = [];
-        let maxParticles = 350; 
+        let maxParticles = 350;
         let img: any;
 
         let settings = {
@@ -36,7 +40,9 @@ export default function HeadSection() {
           p5.blendMode(p5.BLEND);
           p5.colorMode(p5.HSB);
 
-          theme == 'dark' ? p5.background(229, 91, 9) : p5.background(214, 6, 100);
+          theme == 'dark'
+            ? p5.background(229, 91, 9)
+            : p5.background(214, 6, 100);
         };
 
         function createAgent(x = 0, y = 0, vx = 0, vy = 0, generation?: any) {
@@ -52,7 +58,9 @@ export default function HeadSection() {
         }
 
         p5.draw = () => {
-          theme == 'dark' ? p5.background(229, 91, 9, settings.bg_alpha) : p5.background(214, 6, 100, settings.bg_alpha);
+          theme == 'dark'
+            ? p5.background(229, 91, 9, settings.bg_alpha)
+            : p5.background(214, 6, 100, settings.bg_alpha);
 
           while (group.length < maxParticles) {
             const [x, y] = getImgCoords();
@@ -172,7 +180,23 @@ export default function HeadSection() {
     return () => {
       sketchInstance?.remove();
     };
-  }, [theme]);
+  }, [theme, isFirefox, isMobile]);
+
+  if (isFirefox || isMobile) {
+    return (
+      <Image
+        className='gif'
+        width={600}
+        height={600}
+        src={
+          theme === 'dark'
+            ? './images/head/dark.gif'
+            : './images/head/light.gif'
+        }
+        alt='Welcome to Impulse'
+      ></Image>
+    );
+  }
 
   return <></>;
 }
