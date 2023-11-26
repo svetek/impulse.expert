@@ -14,7 +14,7 @@ export default function Footer() {
           >
             {`${new Date().getFullYear()} Impulse`}
           </p>
-          <div className='flex space-x-4 mt-4 sm:mt-0'>
+          <div className='flex space-x-4'>
             <a
               href='https://github.com/svetek'
               className='text-gray-800 dark:text-slate-300'

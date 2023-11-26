@@ -7,7 +7,6 @@ import ServerSection from './components/server-section/server.section';
 import dynamic from 'next/dynamic';
 
 import { ThemeProvider } from './contexts/ThemeContext';
-import Link from 'next/link';
 
 export default function Page() {
   const HeadSection = dynamic(
@@ -23,7 +22,7 @@ export default function Page() {
           <div className='mb-6 md:mb-0'>
             <div
               id='head'
-              className='wow animate__animated animate__pulse animate__infinite mx-auto'
+              className='wow animate__animated animate__pulse animate__infinite mx-auto px-10 lg:px-0'
             >
               <HeadSection />
             </div>
