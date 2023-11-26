@@ -12,7 +12,7 @@ export default function AboutSection() {
     <article
       id='about'
       className='container justify-center max-w-[100%] 
-flex flex-col w-full pb-4 pt-24 scroll-mt-20 pt-24 scroll-mt-20'
+flex flex-col w-full pb-24 scroll-mt-20 scroll-mt-20'
     >
       <h2
         className="font-['KdamThmorPro'] tracking-widest text-center 

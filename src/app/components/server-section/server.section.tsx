@@ -16,7 +16,7 @@ flex flex-col w-full pb-4 scroll-mt-20'
       <h2
         className="font-['KdamThmorPro'] tracking-widest text-center 
     text-3xl font-semibold py-3 px-16 uppercase text-slate-600 dark:text-slate-300 
-    wow animate__animated animate__fadeInDown pt-16 select-none"
+    wow animate__animated animate__fadeIn pt-16 select-none"
       >
         High-Performance Dedicated Servers
       </h2>
