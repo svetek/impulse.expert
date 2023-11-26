@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import ThemeSwitcher from '../../main/components/theme-switcher';
-import { FaGithub, FaMedium, FaTwitter, FaDocker, FaTelegram } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaMedium,
+  FaTwitter,
+  FaDocker,
+  FaTelegram,
+} from 'react-icons/fa';
 import './header.css';
 
 export default function Header() {
@@ -26,7 +32,8 @@ export default function Header() {
         flex
         justify-between
         items-center
-        px-10
+        px-5
+        lg:px-10
         shadow-lg dark:shadow-dark
       '
     >
@@ -58,42 +65,44 @@ export default function Header() {
             </a>
           ))}
         </div>
-        <div className='md:w-auto flex items-center space-x-4'>
-          <a
-            href='https://github.com/svetek'
-            className='header-link text-gray-800 dark:text-slate-300'
-            target='_blank'
-          >
-            <FaGithub className='heder-icon h-5 w-5' />
-          </a>
-          <a
-            href='https://hub.docker.com/u/svetekllc'
-            className='header-link text-gray-800 dark:text-slate-300'
-            target='_blank'
-          >
-            <FaDocker className='heder-icon h-5 w-5' />
-          </a>
-          <a
-            href='https://medium.com/@michael_47027'
-            className='header-link text-gray-800 dark:text-slate-300'
-            target='_blank'
-          >
-            <FaMedium className='heder-icon h-5 w-5' />
-          </a>
-          <a
-            href='https://twitter.com/SvetekLLC'
-            className='header-link text-gray-800 dark:text-slate-300'
-            target='_blank'
-          >
-            <FaTwitter className='heder-icon h-5 w-5' />
-          </a>
-          <a
-            href='https://t.me/crypto_impulse_investing'
-            className='header-link text-gray-800 dark:text-slate-300'
-            target='_blank'
-          >
-            <FaTelegram className='heder-icon h-5 w-5' />
-          </a>
+        <div className='md:w-auto flex items-center space-x-2 lg:space-x-4'>
+          <div className='md:w-auto flex items-center space-x-2 lg:space-x-4'>
+            <a
+              href='https://github.com/svetek'
+              className='header-link text-gray-800 dark:text-slate-300'
+              target='_blank'
+            >
+              <FaGithub className='heder-icon h-5 w-5' />
+            </a>
+            <a
+              href='https://hub.docker.com/u/svetekllc'
+              className='header-link text-gray-800 dark:text-slate-300'
+              target='_blank'
+            >
+              <FaDocker className='heder-icon h-5 w-5' />
+            </a>
+            <a
+              href='https://medium.com/@michael_47027'
+              className='header-link text-gray-800 dark:text-slate-300'
+              target='_blank'
+            >
+              <FaMedium className='heder-icon h-5 w-5' />
+            </a>
+            <a
+              href='https://twitter.com/SvetekLLC'
+              className='header-link text-gray-800 dark:text-slate-300'
+              target='_blank'
+            >
+              <FaTwitter className='heder-icon h-5 w-5' />
+            </a>
+            <a
+              href='https://t.me/crypto_impulse_investing'
+              className='header-link text-gray-800 dark:text-slate-300'
+              target='_blank'
+            >
+              <FaTelegram className='heder-icon h-5 w-5' />
+            </a>
+          </div>
           <ThemeSwitcher />
         </div>
       </nav>
