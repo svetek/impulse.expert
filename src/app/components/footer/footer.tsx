@@ -1,4 +1,4 @@
-import { FaGithub, FaMedium, FaTwitter, FaDocker } from 'react-icons/fa';
+import { FaGithub, FaMedium, FaTwitter, FaDocker, FaTelegram } from 'react-icons/fa';
 import './footer.css';
 
 export default function Footer() {
@@ -42,6 +42,13 @@ export default function Footer() {
               target='_blank'
             >
               <FaTwitter className='footer-icon h-5 w-5' />
+            </a>
+            <a
+              href='https://t.me/crypto_impulse_investing'
+              className='header-link text-gray-800 dark:text-slate-300'
+              target='_blank'
+            >
+              <FaTelegram className='heder-icon h-5 w-5' />
             </a>
           </div>
         </div>

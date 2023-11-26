@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import ThemeSwitcher from '../../main/components/theme-switcher';
-import { FaGithub, FaMedium, FaTwitter, FaDocker } from 'react-icons/fa';
+import { FaGithub, FaMedium, FaTwitter, FaDocker, FaTelegram } from 'react-icons/fa';
 import './header.css';
 
 export default function Header() {
@@ -30,7 +30,10 @@ export default function Header() {
         shadow-lg dark:shadow-dark
       '
     >
-      <a href='/' className='flex items-center justify-center w-full md:w-auto'>
+      <a
+        href='/'
+        className='hidden md:flex flex items-center justify-center w-full md:w-auto'
+      >
         <Image
           width='80'
           height='80'
@@ -43,7 +46,7 @@ export default function Header() {
         </span>
       </a>
 
-      <nav className='hidden md:block'>
+      <nav className='block flex md:items-center space-x-2 lg:space-x-4 justify-between w-full md:w-auto'>
         <div className='flex items-center space-x-2 lg:space-x-4'>
           {links.map(({ link, title }) => (
             <a
@@ -54,7 +57,8 @@ export default function Header() {
               {title}
             </a>
           ))}
-
+        </div>
+        <div className='md:w-auto flex items-center space-x-4'>
           <a
             href='https://github.com/svetek'
             className='header-link text-gray-800 dark:text-slate-300'
@@ -82,6 +86,13 @@ export default function Header() {
             target='_blank'
           >
             <FaTwitter className='heder-icon h-5 w-5' />
+          </a>
+          <a
+            href='https://t.me/crypto_impulse_investing'
+            className='header-link text-gray-800 dark:text-slate-300'
+            target='_blank'
+          >
+            <FaTelegram className='heder-icon h-5 w-5' />
           </a>
           <ThemeSwitcher />
         </div>

@@ -5,5 +5,11 @@
 
 
 .custom-container {
-  max-width: clamp(70%, 75%, 90%);
+  max-width: clamp(70%, 75vw, 90%);
+}
+
+@media (max-width: 768px) {
+  .custom-container {
+    max-width: 95%;
+  }
 }

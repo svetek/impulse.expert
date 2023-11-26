@@ -50,7 +50,7 @@ export default function Page() {
         </section>
 
         {/* <section className='bg-gray-100 p-12'>
-          <h2 className='text-2xl font-bold mb-2'>About Us</h2>
+          <h2 className='text-xl lg:text-2xl font-bold mb-2'>About Us</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         </section> */}
 
