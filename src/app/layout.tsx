@@ -36,7 +36,7 @@ export default function RootLayout({
           digital future'
         ></meta>
         <meta
-          property='twitter:image'
+          name='twitter:image'
           content='https://impulse.expert/card.jpg'
         ></meta>
 
