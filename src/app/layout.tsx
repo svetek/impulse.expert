@@ -22,21 +22,21 @@ export default function RootLayout({
           href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
         />
         {/* Twitter */}
-        <meta name='twitter:card' content='summary_large_image'></meta>
-        <meta name='twitter:site' content='@SvetekLLC'></meta>
+        <meta property='twitter:card' content='summary_large_image'></meta>
+        <meta property='twitter:site' content='@SvetekLLC'></meta>
         <meta
-          name='twitter:title'
+          property='twitter:title'
           content='Impulse. Web3 Nodes Staking Services'
         ></meta>
         <meta
-          name='twitter:description'
+          property='twitter:description'
           content='Specializing in blockchain node operations, we offer secure,
           high-quality staking services. Our mission is to leverage our
           technology experience to ensure a reliable, decentralized
           digital future'
         ></meta>
         <meta
-          name='twitter:image'
+          property='twitter:image'
           content='https://impulse.expert/card.jpg'
         ></meta>
 

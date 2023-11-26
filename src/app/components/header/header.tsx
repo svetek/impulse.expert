@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import ThemeSwitcher from '../../main/components/theme-switcher';
+import ThemeSwitcher from '../theme-switcher/theme-switcher';
 import {
   FaGithub,
   FaMedium,
