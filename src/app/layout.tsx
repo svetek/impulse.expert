@@ -26,18 +26,18 @@ export default function RootLayout({
         <meta name='twitter:site' content='@SvetekLLC'></meta>
         <meta
           name='twitter:title'
-          content='Impulse. Web3 Nodes Services'
+          content='Impulse. Web3 Nodes Staking Services'
         ></meta>
         <meta
           name='twitter:description'
           content='Specializing in blockchain node operations, we offer secure,
           high-quality staking services. Our mission is to leverage our
-          extensive technology experience to ensure a reliable, decentralized
+          technology experience to ensure a reliable, decentralized
           digital future'
         ></meta>
         <meta
           name='twitter:image'
-          content='./logo.png'
+          content='https://impulse.expert/logo.png'
         ></meta>
       </head>
 
