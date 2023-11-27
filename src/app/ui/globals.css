@@ -41,7 +41,7 @@ body {
 }
 
 @media only screen and (max-width : 768px) {
-	.animated {
+	.wow {
 		/*CSS transitions*/
 		-o-transition-property: none !important;
 		-moz-transition-property: none !important;
