@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
+
 import './ui/globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -18,6 +20,18 @@ export default function RootLayout({
   return (
     <html lang='en' className='scroll-smooth'>
       <head>
+        <Script
+          async
+          src='https://www.googletagmanager.com/gtag/js?id=G-W4Y261F2T3'
+        ></Script>
+        <Script id='google-analytics'>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-W4Y261F2T3');
+        `}
+        </Script>
         <link
           rel='stylesheet'
           href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
