@@ -22,9 +22,9 @@ flex flex-col w-full pb-24 scroll-mt-20 scroll-mt-20'
         About Impulse
       </h2>
       <div className='flex flex-col justify-center lg:flex-row px-8'>
-        <div className='flex justify-center items-center animate__animated animate__fadeInLeft mx-24 lg:mb-2 mb-8'>
+        <div className='flex justify-center items-center animate__animated animate__fadeInLeft mx-12 mb:mx-24 lg:mb-2 mb-8'>
           <Image
-            width='200'
+            width='250'
             height='200'
             src={
               theme === 'dark'
@@ -32,7 +32,7 @@ flex flex-col w-full pb-24 scroll-mt-20 scroll-mt-20'
                 : './images/about/light.png'
             }
             alt='Servers fantastic image'
-            className='about-image drop-shadow-[10px_-15px_50px_rgba(245,120,3,.5)] dark:drop-shadow-[10px_-15px_25px_rgba(185,185,185,0.69)]'
+            className='max-w-[100%] drop-shadow-[10px_-15px_50px_rgba(245,120,3,.5)] dark:drop-shadow-[10px_-15px_25px_rgba(185,185,185,0.69)]'
           />
         </div>
 
@@ -43,7 +43,7 @@ flex flex-col w-full pb-24 scroll-mt-20 scroll-mt-20'
             <span className="font-['KdamThmorPro'] tracking-widest text-gray-800 dark:text-slate-300 rounded-md font-semibold">
               Impulse{' '}
             </span>
-            is a dynamic team of IT experts, driven by our enthusiasm for Web3
+            is a dedicated division of <a href='https://www.svetek.com/' target='_blank' className='underline'>Svetek</a>. We&apos;re dynamic team of IT experts, driven by our enthusiasm for Web3
             and cryptocurrency
           </p>
           <p className='mx-8 mb-4 text-xl lg:text-2xl italic'>

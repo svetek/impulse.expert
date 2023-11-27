@@ -37,21 +37,21 @@ export default function RootLayout({
           href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
         />
         {/* Twitter */}
-        <meta property='twitter:card' content='summary_large_image'></meta>
-        <meta property='twitter:site' content='@SvetekLLC'></meta>
+        <meta name='twitter:card' content='summary_large_image'></meta>
+        <meta name='twitter:site' content='@SvetekLLC'></meta>
         <meta
-          property='twitter:title'
+          name='twitter:title'
           content='Impulse. Web3 Nodes Staking Services'
         ></meta>
         <meta
-          property='twitter:description'
+          name='twitter:description'
           content='Specializing in blockchain node operations, we offer secure,
           high-quality staking services. Our mission is to leverage our
           technology experience to ensure a reliable, decentralized
           digital future'
         ></meta>
         <meta
-          property='twitter:image'
+          name='twitter:image'
           content='https://impulse.expert/card.jpg'
         ></meta>
 
@@ -78,6 +78,7 @@ export default function RootLayout({
           content='Impulse. Web3 Nodes Staking Services'
         ></meta>
         <meta property='og:type' content='website'></meta>
+        <meta property='og:url' content='https://impulse.expert'></meta>
       </head>
 
       <body className={inter.className}>{children}</body>

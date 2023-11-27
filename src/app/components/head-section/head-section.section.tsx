@@ -83,7 +83,10 @@ export default function HeadSection() {
             twitch(agent);
           });
 
-          p5.stroke(theme == 'dark' ? 255 : 10, settings.stroke_alpha);
+          theme == 'dark'
+            ? p5.stroke(255, settings.stroke_alpha)
+            : p5.stroke(227, 96, 27, settings.stroke_alpha);
+
           connectNearbyParticles();
           cleanUp();
         };

@@ -1,18 +1,49 @@
-import { FaGithub, FaMedium, FaTwitter, FaDocker, FaTelegram } from 'react-icons/fa';
+'use client';
+
+import {
+  FaGithub,
+  FaMedium,
+  FaTwitter,
+  FaDocker,
+  FaTelegram,
+} from 'react-icons/fa';
 import './footer.css';
+import Image from 'next/image';
+import { useContext } from 'react';
+import { ThemeContext } from '../../contexts/ThemeContext';
 
 export default function Footer() {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <footer className='bg-blue-50 dark:bg-gray-900'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4'>
         <div className='flex justify-between items-center flex-wrap'>
           <p
-            className="
+            className='
+              flex items-center	justify-center
               select-none
-              font-['KdamThmorPro'] tracking-widest tracking-wide px-2 lg:px-3 py-2 rounded-md font-semibold
-              text-slate-600 dark:text-gray-300"
+              tracking-widest tracking-wide lg:px-3 py-2 rounded-md
+              text-slate-600 dark:text-gray-300'
           >
-            {`${new Date().getFullYear()} Impulse`}
+            <span className="font-['KdamThmorPro'] font-semibold mr-1">
+              Impulse
+            </span>
+            by
+            <a href='https://www.svetek.com' target='_blank'>
+              <Image
+                className='mx-1 mb-1'
+                alt='Svetek Logo'
+                width={100}
+                height={30}
+                src={
+                  theme === 'dark'
+                    ? './images/footer/svetek_dark.svg'
+                    : '/images/footer/svetek_light.svg'
+                }
+              ></Image>
+            </a>
+            {`, ${new Date().getFullYear()}`}
           </p>
           <div className='flex space-x-4'>
             <a
