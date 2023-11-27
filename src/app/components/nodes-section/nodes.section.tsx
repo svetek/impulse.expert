@@ -18,21 +18,21 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
   return (
     <article
       id={id}
-      className='container max-w-[100%] 
+      className='container max-w-[100%] md:max-w-[95%] lg:max-w-[80%] 
         flex flex-col w-full pb-8 pt-8 scroll-mt-20'
     >
       <h2
         className="font-['KdamThmorPro'] tracking-widest text-center 
-        text-3xl font-semibold py-3 uppercase text-slate-600 dark:text-slate-300 
+        text-xl md:text-3xl font-semibold py-3 uppercase text-slate-600 dark:text-slate-300 
         wow animate__animated animate__fadeInDown select-none"
       >
         {title}
       </h2>
-      <div className='flex justify-center flex-wrap custom-container'>
+      <div className='flex justify-center flex-wrap'>
         {nodes.map((block, index) => (
           <div
             key={index}
-            className='custom-card rounded-xl p-5 m-3 mb-3 flex flex-col items-center text-center
+            className='max-w-[40%] lg:max-w-[20%] md:max-w-[30%] rounded-xl p-5 m-3 mb-3 flex flex-col items-center text-center
           bg-white dark:bg-slate-900
           hover:shadow-xl hover:dark:shadow-dark-lg
           hover:bg-slate-100 hover:dark:bg-slate-800
@@ -44,14 +44,14 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
             <Image
               width='200'
               height='200'
-              className='w-full rounded-full'
+              className='md:max-w-[90%] rounded-full mx-auto'
               src={block.logo}
               alt={block.title}
             />
-            <p className='mt-4 font-medium text-lg text-gray-900 dark:text-slate-300 h-[3em] overflow-hidden'>
+            <p className='mt-2 md:mt-4 font-medium md:text-lg text-sm text-gray-900 dark:text-slate-300 h-[1.5em] md:h-[3em] overflow-hidden'>
               {block.title}
             </p>
-            <p className='text-sm text-gray-600 dark:text-gray-400 h-[5em] overflow-hidden select-none'>
+            <p className='text-xs md:text-lg text-gray-600 dark:text-gray-400 h-[4em] md:h-[5em] overflow-hidden select-none'>
               {block.description}
             </p>
 
@@ -59,7 +59,7 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
               <Link
                 href={block.link}
                 target='_blank'
-                className='mt-4 inline-block border border-gray-400 text-slate-600 
+                className='mt-2 md:mt-4 md:text-lg text-sm inline-block border border-gray-400 text-slate-600 
             bg-grey-50 dark:border-gray-500 
             dark:text-gray-300 py-1 px-3 rounded
             hover:bg-slate-200 hover:dark:bg-slate-950
@@ -71,7 +71,7 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
 
             {block.explorer && (
               <Link
-                className='mt-4 inline-block border border-gray-400 text-slate-600 
+                className='mt-2 md:mt-4 md:text-lg text-sm inline-block border border-gray-400 text-slate-600 
               bg-grey-50 dark:border-gray-500 
               dark:text-gray-300 py-1 px-3 rounded
               hover:bg-slate-200 hover:dark:bg-slate-950

@@ -186,7 +186,7 @@ export default function HeadSection() {
     return (
       <Image
         priority={true}
-        className='gif px-12 lg:px-0'
+        className='gif'
         width={600}
         height={600}
         src={
