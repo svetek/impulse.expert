@@ -42,6 +42,7 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
           wow animate__animated animate__fadeInUp'
           >
             <Image
+              loading='lazy'
               width='200'
               height='200'
               className='md:max-w-[90%] rounded-full mx-auto'

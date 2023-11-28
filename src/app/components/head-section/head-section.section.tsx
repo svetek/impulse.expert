@@ -189,7 +189,14 @@ export default function HeadSection() {
     return (
       <Image
         priority={true}
-        className='gif'
+        className='gif low-quality-image'
+        style={{
+          backgroundImage: `${
+            theme === 'dark'
+              ? 'url(/images/head/dark_img.png)'
+              : 'url(/images/head/light_img.png)'
+          }`,
+        }}
         width={600}
         height={600}
         src={

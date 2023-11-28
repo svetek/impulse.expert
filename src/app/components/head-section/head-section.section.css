@@ -6,3 +6,8 @@
 .gif {
   opacity: 0.8;
 }
+
+.low-quality-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}

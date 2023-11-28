@@ -18,7 +18,7 @@ export default function Page() {
     <ThemeProvider>
       <Header />
       <main className='main'>
-        <section className='flex flex-col lg:flex-row items-center justify-center py-36 pb-8 lg:py-36 lg:pt-44'>
+        <section className='flex flex-col lg:flex-row items-center justify-center py-36 pb-8 lg:py-36 lg:pt-44 min-h-[450px] lg:min-h-[900px]'>
           <div className='mb-6 md:mb-0'>
             <div
               id='head'

@@ -37,15 +37,6 @@ export default function Header() {
         shadow-lg dark:shadow-dark
       '
     >
-      <noscript>
-        <div>
-          <img
-            src='https://mc.yandex.ru/watch/95703397'
-            style={{ position: 'absolute', left: '-9999px' }}
-            alt=''
-          />
-        </div>
-      </noscript>
       <a
         href='/'
         className='hidden md:flex flex items-center justify-center w-full md:w-auto'

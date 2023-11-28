@@ -24,6 +24,7 @@ flex flex-col w-full pb-24 scroll-mt-20 scroll-mt-20'
       <div className='flex flex-col justify-center lg:flex-row px-8'>
         <div className='flex justify-center items-center animate__animated animate__fadeInLeft mx-12 mb:mx-24 lg:mb-2 mb-8'>
           <Image
+            loading='lazy'
             width='250'
             height='200'
             src={
