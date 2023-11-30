@@ -33,7 +33,7 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
           <div
             key={index}
             className='z-30 pointer-events-none select-none max-w-[40%] lg:max-w-[20%] md:max-w-[30%] rounded-xl p-5 m-3 mb-3 flex flex-col items-center text-center
-          bg-white dark:bg-slate-900
+          bg-white dark:bg-slate-900 border-2 border-transparent
           hover:shadow-xl hover:dark:shadow-dark-lg
           hover:bg-slate-100 hover:dark:bg-slate-800
           hover:border-2 hover:border-slate-300
