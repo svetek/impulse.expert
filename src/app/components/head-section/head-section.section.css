@@ -1,8 +1,3 @@
-.about-image {
-  height: clamp(300px, 500px, 70vw);
-  width: auto;
-}
-
 .gif {
   opacity: 0.8;
 }
@@ -10,4 +5,9 @@
 .low-quality-image {
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#welcome-logo {
+  -webkit-mask-image: radial-gradient(farthest-corner at 305px 280px, rgb(0, 0, 0) 50%, transparent 100%);
+  border-radius: 30%;
 }

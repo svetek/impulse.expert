@@ -4,7 +4,7 @@ import './monitoring-section.css';
 export default function MonitoringSection() {
   return (
     <section
-      className='monitoring-section flex items-center justify-center'
+      className='z-30 pointer-events-none select-none monitoring-section flex items-center justify-center'
       style={{ backgroundImage: `url('images/monitoring.png')` }}
     >
       <div className='container'>

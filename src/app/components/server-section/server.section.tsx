@@ -14,13 +14,13 @@ export default function ServerSection() {
 flex flex-col w-full pb-4 scroll-mt-20'
     >
       <h2
-        className="text-xl lg:text-3xl font-['KdamThmorPro'] tracking-widest text-center 
+        className="z-30 text-xl lg:text-3xl font-['KdamThmorPro'] tracking-widest text-center 
         font-semibold py-3 px-16 uppercase text-slate-600 dark:text-slate-300 
         wow animate__animated animate__fadeIn pt-8 lg:pt-16 select-none"
       >
         High-Performance Dedicated Servers
       </h2>
-      <div className='flex flex-col justify-center lg:flex-row px-8'>
+      <div className='z-30 flex flex-col justify-center lg:flex-row px-8'>
         <div className='flex justify-center items-center animate__animated animate__fadeInLeft'>
           <Image
             loading='lazy'
@@ -32,7 +32,7 @@ flex flex-col w-full pb-4 scroll-mt-20'
                 : './images/server/light.png'
             }
             alt='Servers fantastic image'
-            className='server-image'
+            className='server-image pointer-events-none select-none'
           />
         </div>
 

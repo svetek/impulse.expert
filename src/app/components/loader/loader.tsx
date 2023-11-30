@@ -60,7 +60,7 @@ export default function RouteLoader() {
           priority={true}
           src='/logo.png'
           alt='Loading...'
-          className='logo slow-spin mx-auto wow animate__animated animate__pulse animate__infinite'
+          className='pointer-events-none select-none logo slow-spin mx-auto wow animate__animated animate__pulse animate__infinite'
         ></Image>
         <h2 className='font-["KdamThmorPro"] tracking-widest text-3xl font-bold mt-4 text-slate-300 wow animate__animated animate__pulse animate__infinite	'>
           Loading...

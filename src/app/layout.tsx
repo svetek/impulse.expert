@@ -20,18 +20,6 @@ export default function RootLayout({
   return (
     <html lang='en' className='scroll-smooth'>
       <head>
-        <Script id='yandex-analytics' type='text/javascript'>
-          {`(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(95703397, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });`}
-        </Script>
-        <noscript>
-          <div>
-            <img
-              src='https://mc.yandex.ru/watch/95703397'
-              style={{ position: 'absolute', left: '-9999px' }}
-              alt=''
-            />
-          </div>
-        </noscript>
         <Script
           async
           src='https://www.googletagmanager.com/gtag/js?id=G-W4Y261F2T3'
@@ -68,10 +56,7 @@ export default function RootLayout({
         ></meta>
 
         {/* OG */}
-        <meta
-          property='og:image'
-          content='https://impulse.expert/card.jpg'
-        ></meta>
+        <meta property='og:type' content='website'></meta>
         <meta
           property='og:title'
           content='Impulse. Web3 Nodes Staking Services'
@@ -83,14 +68,17 @@ export default function RootLayout({
           technology experience to ensure a reliable, decentralized
           digital future'
         ></meta>
-        <meta property='og:locale' content='en_US'></meta>
-        <meta property='og:site_name' content='Impulse'></meta>
+        <meta property='og:url' content='https://impulse.expert'></meta>
+        <meta
+          property='og:image'
+          content='https://impulse.expert/card.jpg'
+        ></meta>
         <meta
           property='og:image:alt'
           content='Impulse. Web3 Nodes Staking Services'
         ></meta>
-        <meta property='og:type' content='website'></meta>
-        <meta property='og:url' content='https://impulse.expert'></meta>
+        <meta property='og:locale' content='en_US'></meta>
+        <meta property='og:site_name' content='Impulse'></meta>
       </head>
 
       <body className={inter.className}>{children}</body>

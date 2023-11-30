@@ -12,16 +12,16 @@ export default function AboutSection() {
     <article
       id='about'
       className='container justify-center max-w-[100%] 
-flex flex-col w-full pb-24 scroll-mt-20 scroll-mt-20'
+flex flex-col w-full pb-24 scroll-mt-20'
     >
       <h2
-        className="font-['KdamThmorPro'] tracking-widest text-center 
+        className="z-30 font-['KdamThmorPro'] tracking-widest text-center 
     text-xl lg:text-3xl font-semibold py-3 px-16 uppercase text-slate-600 dark:text-slate-300 
     wow animate__animated animate__fadeInDown pt-4 lg:pt-16 select-none"
       >
         About Impulse
       </h2>
-      <div className='flex flex-col justify-center lg:flex-row px-8'>
+      <div className='z-30 flex flex-col justify-center lg:flex-row px-8'>
         <div className='flex justify-center items-center animate__animated animate__fadeInLeft mx-12 mb:mx-24 lg:mb-2 mb-8'>
           <Image
             loading='lazy'
@@ -33,7 +33,7 @@ flex flex-col w-full pb-24 scroll-mt-20 scroll-mt-20'
                 : './images/about/light.png'
             }
             alt='Servers fantastic image'
-            className='max-w-[100%] drop-shadow-[10px_-15px_50px_rgba(245,120,3,.5)] dark:drop-shadow-[10px_-15px_25px_rgba(185,185,185,0.69)]'
+            className='pointer-events-none select-none max-w-[100%] drop-shadow-[10px_-15px_50px_rgba(245,120,3,.5)] dark:drop-shadow-[10px_-15px_25px_rgba(185,185,185,0.69)]'
           />
         </div>
 

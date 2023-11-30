@@ -44,7 +44,7 @@ export default function Header() {
         <Image
           width='80'
           height='80'
-          className='block h-20 w-auto drop-shadow-[0_0px_5px_rgba(100,100,100,0.85)] dark:drop-shadow-[0_0px_5px_rgba(185,185,185,0.69)]'
+          className='pointer-events-none select-none block h-20 w-auto drop-shadow-[0_0px_5px_rgba(100,100,100,0.85)] dark:drop-shadow-[0_0px_5px_rgba(185,185,185,0.69)]'
           src='/logo.png'
           alt='Logo'
         />

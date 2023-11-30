@@ -16,7 +16,7 @@ export default function Footer() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <footer className='bg-blue-50 dark:bg-gray-900'>
+    <footer className='z-30 bg-blue-50 dark:bg-gray-900'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4'>
         <div className='flex flex-col-reverse justify-between items-center flex-wrap md:flex-row'>
           <p
@@ -32,7 +32,7 @@ export default function Footer() {
             by
             <a href='https://www.svetek.com' target='_blank'>
               <Image
-                className='mx-1 mb-1'
+                className='mx-1 mb-1 pointer-events-none select-none'
                 alt='Svetek Logo'
                 width={100}
                 height={30}
