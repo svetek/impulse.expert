@@ -11,6 +11,7 @@ import './footer.css';
 import Image from 'next/image';
 import { useContext } from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext';
+import Link from 'next/link';
 
 export default function Footer() {
   const { theme } = useContext(ThemeContext);
@@ -30,7 +31,7 @@ export default function Footer() {
               Impulse
             </span>
             by
-            <a href='https://www.svetek.com' target='_blank'>
+            <Link href='https://www.svetek.com' target='_blank'>
               <Image
                 className='mx-1 mb-1 pointer-events-none select-none'
                 alt='Svetek Logo'
@@ -42,45 +43,45 @@ export default function Footer() {
                     : '/images/footer/svetek_light.svg'
                 }
               ></Image>
-            </a>
+            </Link>
             {`, ${new Date().getFullYear()}`}
           </p>
           <div className='flex space-x-4'>
-            <a
+            <Link
               href='https://medium.com/@michael_47027'
               className='text-gray-800 dark:text-slate-300'
               target='_blank'
             >
               <FaMedium className='footer-icon h-5 w-5' />
-            </a>
-            <a
+            </Link>
+            <Link
               href='https://twitter.com/SvetekLLC'
               className='text-gray-800 dark:text-slate-300'
               target='_blank'
             >
               <FaTwitter className='footer-icon h-5 w-5' />
-            </a>
-            <a
+            </Link>
+            <Link
               href='https://t.me/crypto_impulse_investing'
               className='header-link text-gray-800 dark:text-slate-300'
               target='_blank'
             >
               <FaTelegram className='heder-icon h-5 w-5' />
-            </a>
-            <a
+            </Link>
+            <Link
               href='https://github.com/svetek'
               className='text-gray-800 dark:text-slate-300'
               target='_blank'
             >
               <FaGithub className='footer-icon h-5 w-5' />
-            </a>
-            <a
+            </Link>
+            <Link
               href='https://hub.docker.com/u/svetekllc'
               className='text-gray-800 dark:text-slate-300'
               target='_blank'
             >
               <FaDocker className='footer-icon h-5 w-5' />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

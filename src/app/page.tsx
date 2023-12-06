@@ -7,7 +7,6 @@ import ServerSection from './components/server-section/server.section';
 import dynamic from 'next/dynamic';
 
 import { ThemeProvider } from './contexts/ThemeContext';
-import HeadBackgroundSection from './components/head-background/head-background.section';
 
 export default function Page() {
   const HeadSection = dynamic(
@@ -28,7 +27,7 @@ export default function Page() {
           id='background'
           className='z-10 absolute top-24 left-0	lg:w-0 lg:h-0 lg:w-full lg:h-full'
         >
-          <HeadBackgroundSection />
+          {/* <HeadBackgroundSection key={`head-bg-${theme}`} /> */}
         </div>
         <section className='flex flex-col lg:flex-row items-center justify-center py-36 pb-8 lg:py-36 lg:pt-44 min-h-[450px] lg:min-h-[900px]'>
           <div className='mb-6 md:mb-0'>
@@ -36,7 +35,7 @@ export default function Page() {
               id='welcome-logo'
               className='z-10 relative wow animate__animated animate__pulse animate__infinite mx-auto px-10 lg:px-0'
             >
-              <HeadSection />
+              <HeadSection/>
             </div>
           </div>
           <div className='z-30 flex-3 select-none lg:flex-1 lg:max-w-[40%] wow animate__animated animate__fadeInRight px-5 md:px-10 text-center md:text-left'>

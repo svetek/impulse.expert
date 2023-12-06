@@ -3,8 +3,9 @@ import { Url } from 'next/dist/shared/lib/router/router';
 export type NodeCard = {
   logo: string;
   title: string;
-  link: Url;
+  link?: Url;
   explorer?: Url;
+  pageLink?: string;
   page?: string;
   description?: string;
 };
@@ -64,9 +65,7 @@ export const testnetNodes: Array<NodeCard> = [
   {
     logo: './images/nodes/lava.svg',
     title: 'Lava',
-    link: 'https://www.lavanet.xyz/',
-    explorer:
-      'https://lava.explorers.guru/validator/lava@valoper1q7jyftyahuf66jefc36254rldk6je9xkaaseh4',
+    pageLink: '/lava',
     description:
       'Pairs Providers with DApps for scalable, private and uncensored access to Web3',
   },

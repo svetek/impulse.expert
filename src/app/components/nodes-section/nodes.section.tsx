@@ -70,6 +70,19 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
               </Link>
             )}
 
+            {block.pageLink && (
+              <Link
+                href={block.pageLink}
+                className='pointer-events-auto mt-2 md:mt-4 md:text-lg text-sm inline-block border border-gray-400 text-slate-600 
+            bg-grey-50 dark:border-gray-500 
+            dark:text-gray-300 py-1 px-3 rounded
+            hover:bg-slate-200 hover:dark:bg-slate-950
+            wow animate__animated animate__pulse animate__repeat-3'
+              >
+                More...
+              </Link>
+            )}
+
             {block.explorer && (
               <Link
                 className='pointer-events-auto mt-2 md:mt-4 md:text-lg text-sm inline-block border border-gray-400 text-slate-600 
