@@ -14,9 +14,7 @@ export const mainnetNodes: Array<NodeCard> = [
   {
     logo: './images/nodes/cardano_logo.png',
     title: 'Cardano',
-    explorer:
-      'https://adastat.net/pools/06be20d0da5810fae2f0376dc0a01a31d459c0ca6da8e3ddf58a67d9',
-    link: 'https://cardano.org/',
+    pageLink: '/cardano',
     description: 'One of the biggest cryptocurrencies by market cap',
   },
   {
