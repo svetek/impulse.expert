@@ -59,30 +59,36 @@ flex flex-col w-full pb-4 scroll-mt-20'
                 height='500'
                 src='/images/pages/cardano/cardano_raccoon.png'
                 alt='Cardano Ecosystem Illustration'
-                className='pointer-events-none select-none max-w-[100%] drop-shadow-[10px_-15px_50px_rgba(0,113,206,.5)] dark:drop-shadow-[10px_-15px_25px_rgba(185,185,185,0.69)]'
+                className='pointer-events-none select-none max-w-[100%] drop-shadow-[10px_-15px_50px_rgba(0,113,206,.5)] dark:drop-shadow-[10px_-15px_25px_rgba(115,163,255,0.69)]'
               />
             </div>
 
             <div className='select-none lg:flex-1 lg:max-w-[50%] flex flex-col justify-center wow animate__animated animate__fadeInRight text-gray-800 dark:text-slate-300'>
               <p className='mx-8 mb-4 text-xl lg:text-2xl'>
-                Discover the power of the Cardano blockchain with its highly secure, 
-                scalable, and sustainable platform, supporting a diverse range of dApps and innovations.
+                Discover the power of the Cardano blockchain with its highly
+                secure, scalable, and sustainable platform, supporting a diverse
+                range of dApps and innovations.
               </p>
               <ul className='mx-16 list-inside text-xl lg:text-2xl list-disc'>
                 <li className='mb-2 wow animate__animated animate__fadeInUp animate__delay-1s'>
-                  <span className='font-semibold'>Features:</span> Decentralized Governance, Low Energy Consumption
+                  <span className='font-semibold'>Features:</span> Decentralized
+                  Governance, Low Energy Consumption
                 </li>
                 <li className='mb-2 wow animate__animated animate__fadeInUp animate__delay-1s'>
-                  <span className='font-semibold'>ADA Cryptocurrency:</span> Secure and Sustainable Digital Currency
+                  <span className='font-semibold'>ADA Cryptocurrency:</span>{' '}
+                  Secure and Sustainable Digital Currency
                 </li>
                 <li className='mb-2 wow animate__animated animate__fadeInUp animate__delay-1s'>
-                  <span className='font-semibold'>Development:</span> Peer-Reviewed Research, Transparent Process
+                  <span className='font-semibold'>Development:</span>{' '}
+                  Peer-Reviewed Research, Transparent Process
                 </li>
                 <li className='mb-2 wow animate__animated animate__fadeInUp animate__delay-1s'>
-                  <span className='font-semibold'>Community:</span> Global Adoption, Active Developer Community
+                  <span className='font-semibold'>Community:</span> Global
+                  Adoption, Active Developer Community
                 </li>
                 <li className='mb-2 wow animate__animated animate__fadeInUp animate__delay-1s'>
-                  <span className='font-semibold'>Upcoming:</span> Continuous Ecosystem Enhancements and Partnerships
+                  <span className='font-semibold'>Upcoming:</span> Continuous
+                  Ecosystem Enhancements and Partnerships
                 </li>
               </ul>
             </div>

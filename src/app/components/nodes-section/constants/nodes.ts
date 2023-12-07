@@ -118,7 +118,14 @@ export const testnetNodes: Array<NodeCard> = [
     logo: './images/nodes/masa-fin.png',
     title: 'Masa Finance',
     link: 'https://www.masa.finance/',
-    description:
-      'The mission is to bring the next 1 billion people to Web3',
+    description: 'The mission is to bring the next 1 billion people to Web3',
+  },
+  {
+    logo: './images/nodes/cascadia.png',
+    title: 'Cascadia',
+    link: 'https://www.cascadia.foundation/',
+    explorer:
+      'https://validator.cascadia.foundation/validators/cascadiavaloper1l5c34aap2p5rrvqyemhf03v0ztn0d8l39c05m6',
+    description: 'A web3 platform driving consumer behavior through innovative technologies',
   },
 ];

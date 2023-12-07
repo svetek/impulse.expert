@@ -59,7 +59,7 @@ flex flex-col w-full pb-4 scroll-mt-20'
                 height='400'
                 src='/images/pages/lava/lava_raccoon.png'
                 alt='LavaNet illustration'
-                className='pointer-events-none select-none max-w-[100%] drop-shadow-[10px_-15px_50px_rgba(245,120,3,.5)] dark:drop-shadow-[10px_-15px_25px_rgba(185,185,185,0.69)]'
+                className='pointer-events-none select-none max-w-[100%] drop-shadow-[10px_-15px_50px_rgba(255,100,3,.5)] dark:drop-shadow-[10px_-15px_25px_rgba(255,1,1,0.59)]'
               />
             </div>
 
