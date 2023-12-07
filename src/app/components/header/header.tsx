@@ -14,11 +14,11 @@ export default function Header() {
   const links = [
     {
       title: 'About Us',
-      link: '#about',
+      link: '/#about',
     },
     {
       title: 'Our Projects',
-      link: '#mainnets',
+      link: '/#mainnets',
     },
   ];
   return (
