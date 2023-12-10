@@ -36,6 +36,7 @@ export default function RootLayout({
           rel='stylesheet'
           href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
         />
+        <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Impulse"/>
         {/* Twitter */}
         <meta name='twitter:card' content='summary_large_image'></meta>
         <meta name='twitter:site' content='@SvetekLLC'></meta>

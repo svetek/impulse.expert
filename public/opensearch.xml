@@ -1,0 +1,10 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+  xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Impulse</ShortName>
+  <Description>Specializing in blockchain node operations, we offer secure, high-quality Web3 staking services</Description>
+  <Url type="text/html" template="https://impulse.expert" method="GET"/>
+  <Image height="16" width="16" type="image/x-icon">https://impulse.expert/favicon.ico</Image>
+  <OutputEncoding>UTF-8</OutputEncoding>
+  <InputEncoding>UTF-8</InputEncoding>
+  <moz:SearchForm>https://impulse.expert</moz:SearchForm>
+</OpenSearchDescription>
