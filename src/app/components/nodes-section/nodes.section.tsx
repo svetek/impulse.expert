@@ -45,7 +45,7 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
               loading='lazy'
               width='200'
               height='200'
-              className='z-30 md:max-w-[90%] rounded-full mx-auto'
+              className={`z-30 md:max-w-[90%] rounded-full mx-auto ${block.invert ? 'dark:filter dark:invert' : ''}`}
               src={block.logo}
               alt={block.title}
             />

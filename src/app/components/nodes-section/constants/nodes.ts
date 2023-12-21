@@ -7,6 +7,7 @@ export type NodeCard = {
   explorer?: Url;
   pageLink?: string;
   page?: string;
+  invert?: boolean;
   description?: string;
 };
 
@@ -41,6 +42,14 @@ export const mainnetNodes: Array<NodeCard> = [
       'https://shell.haqq.network/staking/validator/haqqvaloper1zenrae0nqd0mclna6an3059z66tlrzar5xmkzp',
     link: 'https://islamiccoin.net',
     description: 'Community-run network, which has a finite total supply',
+  },
+  {
+    logo: './images/nodes/canto.svg',
+    title: 'Canto',
+    link: 'https://canto.io/',
+    description: 'Canto: EVM-based, DeFi-focused blockchain with zero-fee DEX',
+    explorer: 'https://www.mintscan.io/canto/validators/cantovaloper1cr7ulf0lwhgy7rdfvt08mg4w5hft2zggg5guwg',
+    invert: true
   },
   {
     logo: './images/nodes/juno.png',
@@ -127,5 +136,5 @@ export const testnetNodes: Array<NodeCard> = [
     title: 'Masa Finance',
     link: 'https://www.masa.finance/',
     description: 'The mission is to bring the next 1 billion people to Web3',
-  },
+  }
 ];
