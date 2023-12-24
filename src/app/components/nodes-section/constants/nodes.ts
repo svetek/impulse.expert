@@ -132,6 +132,12 @@ export const testnetNodes: Array<NodeCard> = [
     description: 'A web3 platform driving consumer behavior through innovative technologies',
   },
   {
+    logo: './images/nodes/artela.png',
+    title: 'Artela',
+    link: 'https://artela.network/',
+    description: 'Extensible blockchain network enabling developers to build feature rich dApps',
+  },
+  {
     logo: './images/nodes/masa-fin.png',
     title: 'Masa Finance',
     link: 'https://www.masa.finance/',
