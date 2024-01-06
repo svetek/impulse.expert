@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import Script from 'next/script';
 
 import './ui/globals.css';
+import LibsLoader from './components/libs-loader/libs-loader';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -36,7 +37,12 @@ export default function RootLayout({
           rel='stylesheet'
           href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
         />
-        <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Impulse"/>
+        <link
+          rel='search'
+          type='application/opensearchdescription+xml'
+          href='/opensearch.xml'
+          title='Impulse'
+        />
         {/* Twitter */}
         <meta name='twitter:card' content='summary_large_image'></meta>
         <meta name='twitter:site' content='@SvetekLLC'></meta>
@@ -82,7 +88,10 @@ export default function RootLayout({
         <meta property='og:site_name' content='Impulse'></meta>
       </head>
 
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <LibsLoader />
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,20 +1,12 @@
 'use client';
 
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect } from 'react';
 import Image from 'next/image';
 import './theme-switcher.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 
 export default function ThemeSwitcher() {
   const { theme, setTheme } = useContext(ThemeContext);
-
-  useEffect(() => {
-    const isServer = typeof window === 'undefined';
-    const WOW = !isServer ? require('wow.js') : null;
-    new WOW({
-      mobile: false,
-    }).init();
-  });
 
   useEffect(() => {
     const storedTheme =

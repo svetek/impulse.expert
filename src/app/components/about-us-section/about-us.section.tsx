@@ -15,14 +15,20 @@ export default function AboutSection() {
 flex flex-col w-full pb-24 scroll-mt-20'
     >
       <h2
+        data-aos='fade-down'
+        data-aos-duration='1000'
         className="z-30 font-['KdamThmorPro'] tracking-widest text-center 
     text-xl lg:text-3xl font-semibold py-3 px-16 uppercase text-slate-600 dark:text-slate-300 
-    wow animate__animated animate__fadeInDown pt-4 lg:pt-16 select-none"
+    pt-4 lg:pt-16 select-none"
       >
         About Impulse
       </h2>
       <div className='z-30 flex flex-col justify-center lg:flex-row px-8'>
-        <div className='flex justify-center items-center animate__animated animate__fadeInLeft mx-12 mb:mx-24 lg:mb-2 mb-8'>
+        <div
+          data-aos='fade-right'
+          data-aos-duration='1000'
+          className='flex justify-center items-center mx-12 mb:mx-24 lg:mb-2 mb-8'
+        >
           <Image
             loading='lazy'
             width='250'
@@ -37,15 +43,27 @@ flex flex-col w-full pb-24 scroll-mt-20'
           />
         </div>
 
-        <div className='select-none lg:flex-1 lg:max-w-[40%] flex flex-col 
-          justify-center wow animate__animated animate__fadeInRight text-gray-800 dark:text-slate-300
-          text-center	lg:text-left'>
+        <div
+          data-aos='fade-left'
+          data-aos-duration='1000'
+          className='select-none lg:flex-1 lg:max-w-[40%] flex flex-col 
+          justify-center text-gray-800 dark:text-slate-300
+          text-center	lg:text-left'
+        >
           <p className='mx-8 mb-4 text-xl lg:text-2xl'>
             <span className="font-['KdamThmorPro'] tracking-widest text-gray-800 dark:text-slate-300 rounded-md font-semibold">
               Impulse{' '}
             </span>
-            is a dedicated division of <a href='https://www.svetek.com/' target='_blank' className='underline'>Svetek</a>. We&apos;re dynamic team of IT experts, driven by our enthusiasm for Web3
-            and cryptocurrency
+            is a dedicated division of{' '}
+            <a
+              href='https://www.svetek.com/'
+              target='_blank'
+              className='underline'
+            >
+              Svetek
+            </a>
+            . We&apos;re dynamic team of IT experts, driven by our enthusiasm
+            for Web3 and cryptocurrency
           </p>
           <p className='mx-8 mb-4 text-xl lg:text-2xl italic'>
             At the heart of our team is our unique mascot – a raccoon

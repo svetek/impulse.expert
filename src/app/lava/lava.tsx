@@ -14,7 +14,12 @@ export default function Lava() {
           className='container justify-center max-w-[100%] 
 flex flex-col w-full pb-4 scroll-mt-20'
         >
-          <div className='text-center py-1 flex flex-col items-center lg:flex-row lg:justify-center'>
+          <div
+            data-aos='fade-down'
+            data-aos-duration='1000'
+            data-aos-once='true'
+            className='text-center py-1 flex flex-col items-center lg:flex-row lg:justify-center'
+          >
             <Image
               src='/images/pages/lava/lava.svg'
               alt='Lava Logo'
@@ -22,12 +27,17 @@ flex flex-col w-full pb-4 scroll-mt-20'
               height={100}
               className='mb-4 lg:mb-0 lg:mr-4'
             />
-            <h1 className="z-30 text-3xl lg:text-6xl font-['KdamThmorPro'] font-bold tracking-widest text-slate-600 dark:text-slate-300 wow animate__animated animate__fadeIn">
+            <h1 className="z-30 text-3xl lg:text-6xl font-['KdamThmorPro'] font-bold tracking-widest text-slate-600 dark:text-slate-300">
               lava
             </h1>
           </div>
 
-          <div className='text-center my-2 flex flex-col items-center sm:flex-row sm:justify-center min-h-10'>
+          <div
+            data-aos='fade-right'
+            data-aos-duration='1000'
+            data-aos-once='true'
+            className='text-center my-2 flex flex-col items-center sm:flex-row sm:justify-center min-h-10'
+          >
             <Link
               className="underline header-link font-['KdamThmorPro'] tracking-widest text-gray-800 dark:text-slate-300 px-1 lg:px-3 py-2 rounded-md font-semibold mb-2 sm:mb-0 sm:mx-2"
               href='https://www.lavanet.xyz/'
@@ -45,14 +55,22 @@ flex flex-col w-full pb-4 scroll-mt-20'
           </div>
 
           <h2
+            data-aos='fade-left'
+            data-aos-duration='1000'
+            data-aos-once='true'
             className="z-30 text-xl lg:text-3xl font-['KdamThmorPro'] tracking-widest text-center 
     font-semibold py-1 px-16 uppercase text-slate-600 dark:text-slate-300 
-    wow animate__animated animate__fadeIn pt-2 lg:pt-8 select-none"
+    pt-2 lg:pt-8 select-none"
           >
             Decentralized Multi-Chain RPC and API Services
           </h2>
           <div className='z-30 flex flex-col justify-center lg:flex-row px-8'>
-            <div className='flex justify-center items-center animate__animated animate__fadeInLeft'>
+            <div
+              data-aos='fade-right'
+              data-aos-duration='1000'
+              data-aos-once='true'
+              className='flex justify-center items-center'
+            >
               <Image
                 loading='lazy'
                 width='400'
@@ -63,30 +81,35 @@ flex flex-col w-full pb-4 scroll-mt-20'
               />
             </div>
 
-            <div className='select-none lg:flex-1 lg:max-w-[50%] flex flex-col justify-center wow animate__animated animate__fadeInRight text-gray-800 dark:text-slate-300'>
+            <div
+              data-aos='fade-up'
+              data-aos-duration='1000'
+              data-aos-once='true'
+              className='select-none lg:flex-1 lg:max-w-[50%] flex flex-col justify-center text-gray-800 dark:text-slate-300'
+            >
               <p className='mx-8 mb-4 text-xl lg:text-2xl'>
                 Unleash the power of blockchain with LavaNet&apos;s versatile
                 multi-chain RPC and API services, supporting over 15 blockchain
                 networks for seamless integration.
               </p>
               <ul className='mx-16 list-inside text-xl lg:text-2xl list-disc'>
-                <li className='mb-2 wow animate__animated animate__fadeInUp animate__delay-1s'>
+                <li className='mb-2'>
                   <span className='font-semibold'>Networks Supported:</span>{' '}
                   Over 15 Blockchain Networks
                 </li>
-                <li className='mb-2 wow animate__animated animate__fadeInUp animate__delay-1s'>
+                <li className='mb-2'>
                   <span className='font-semibold'>Tools:</span> Lava SDK, Block
                   Explorer, Lava Info
                 </li>
-                <li className='mb-2 wow animate__animated animate__fadeInUp animate__delay-1s'>
+                <li className='mb-2'>
                   <span className='font-semibold'>Features:</span> High Uptime,
                   Fast Response, Data Consistency
                 </li>
-                <li className='mb-2 wow animate__animated animate__fadeInUp animate__delay-1s'>
+                <li className='mb-2'>
                   <span className='font-semibold'>Community:</span> Open-Source,
                   Extensive Documentation
                 </li>
-                <li className='mb-2 wow animate__animated animate__fadeInUp animate__delay-1s'>
+                <li className='mb-2'>
                   <span className='font-semibold'>Upcoming:</span> Lava Phase 2
                   Mainnet Launch in Q1 2024
                 </li>

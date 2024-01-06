@@ -33,12 +33,16 @@ export default function Page() {
           <div className='mb-6 md:mb-0'>
             <div
               id='welcome-logo'
-              className='z-10 relative wow animate__animated animate__pulse animate__infinite mx-auto px-10 lg:px-0'
+              className='z-10 relative animate__animated animate__pulse animate__infinite mx-auto px-10 lg:px-0'
             >
-              <HeadSection/>
+              <HeadSection />
             </div>
           </div>
-          <div className='z-30 flex-3 select-none lg:flex-1 lg:max-w-[40%] wow animate__animated animate__fadeInRight px-5 md:px-10 text-center md:text-left'>
+          <div
+            data-aos='fade-left'
+            data-aos-duration='750'
+            className='z-30 flex-3 select-none lg:flex-1 lg:max-w-[40%] px-5 md:px-10 text-center md:text-left'
+          >
             <h1 className='text-xl lg:text-3xl font-normal mb-3 text-gray-900 dark:text-slate-300 pt-4'>
               Welcome to
               <span className="font-['KdamThmorPro'] tracking-widest text-gray-800 dark:text-slate-300 rounded-md font-semibold">

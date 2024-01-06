@@ -49,7 +49,7 @@ export default function Header() {
           src='/logo.png'
           alt='Logo'
         />
-        <span className="font-['KdamThmorPro'] tracking-widest text-gray-800 dark:text-slate-300 px-3 py-2 rounded-md text-4xl font-semibold">
+        <span className="font-['KdamThmorPro'] capitalize tracking-widest text-gray-800 dark:text-slate-300 px-3 py-2 rounded-md text-4xl font-semibold">
           Impulse
         </span>
       </Link>

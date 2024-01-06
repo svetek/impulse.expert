@@ -50,7 +50,7 @@ export default function RouteLoader() {
         <h1
           className='text-slate-300 font-["KdamThmorPro"] 
           tracking-widest text-4xl font-bold mb-4 text-slate-600 dark:text-slate-300  
-          wow animate__animated animate__pulse animate__infinite'
+          animate__animated animate__pulse animate__infinite'
         >
           Impulse
         </h1>
@@ -60,9 +60,9 @@ export default function RouteLoader() {
           priority={true}
           src='/logo.png'
           alt='Loading...'
-          className='pointer-events-none select-none logo slow-spin mx-auto wow animate__animated animate__pulse animate__infinite'
+          className='pointer-events-none select-none logo slow-spin mx-auto animate__animated animate__pulse animate__infinite'
         ></Image>
-        <h2 className='font-["KdamThmorPro"] tracking-widest text-3xl font-bold mt-4 text-slate-300 wow animate__animated animate__pulse animate__infinite	'>
+        <h2 className='font-["KdamThmorPro"] tracking-widest text-3xl font-bold mt-4 text-slate-300 animate__animated animate__pulse animate__infinite	'>
           Loading...
         </h2>
       </div>
