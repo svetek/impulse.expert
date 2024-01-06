@@ -48,8 +48,9 @@ export const mainnetNodes: Array<NodeCard> = [
     title: 'Canto',
     link: 'https://canto.io/',
     description: 'Canto: EVM-based, DeFi-focused blockchain with zero-fee DEX',
-    explorer: 'https://www.mintscan.io/canto/validators/cantovaloper1cr7ulf0lwhgy7rdfvt08mg4w5hft2zggg5guwg',
-    invert: true
+    explorer:
+      'https://www.mintscan.io/canto/validators/cantovaloper1cr7ulf0lwhgy7rdfvt08mg4w5hft2zggg5guwg',
+    invert: true,
   },
   {
     logo: './images/nodes/juno.png',
@@ -58,13 +59,19 @@ export const mainnetNodes: Array<NodeCard> = [
     description:
       'Starknet is the secure scaling technology bringing Ethereum’s benefits to the world',
   },
-
   {
     logo: './images/nodes/pathfinder.png',
     title: 'Starknet Pathfinder',
     link: 'https://www.starknet.io/en',
     description:
       'Starknet is the secure scaling technology bringing Ethereum’s benefits to the world',
+  },
+  {
+    logo: './images/nodes/massa.jpg',
+    title: 'Massa',
+    link: 'https://massa.net/',
+    description:
+      'Truly decentralized blockchain controlled by thousands of people',
   },
 ];
 
@@ -117,30 +124,25 @@ export const testnetNodes: Array<NodeCard> = [
       'A one-stop, highly personalized access point to discover unique Web3 apps built on Evmos',
   },
   {
-    logo: './images/nodes/massa.jpg',
-    title: 'Massa',
-    link: 'https://massa.net/',
-    description:
-      'Truly decentralized blockchain controlled by thousands of people',
-  },
-  {
     logo: './images/nodes/cascadia.png',
     title: 'Cascadia',
     link: 'https://www.cascadia.foundation/',
     explorer:
       'https://validator.cascadia.foundation/validators/cascadiavaloper1l5c34aap2p5rrvqyemhf03v0ztn0d8l39c05m6',
-    description: 'A web3 platform driving consumer behavior through innovative technologies',
+    description:
+      'A web3 platform driving consumer behavior through innovative technologies',
   },
   {
     logo: './images/nodes/artela.png',
     title: 'Artela',
     link: 'https://artela.network/',
-    description: 'Extensible blockchain network enabling developers to build feature rich dApps',
+    description:
+      'Extensible blockchain network enabling developers to build feature rich dApps',
   },
   {
     logo: './images/nodes/masa-fin.png',
     title: 'Masa Finance',
     link: 'https://www.masa.finance/',
     description: 'The mission is to bring the next 1 billion people to Web3',
-  }
+  },
 ];
