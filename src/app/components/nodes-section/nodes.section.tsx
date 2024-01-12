@@ -84,7 +84,7 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
             hover:bg-slate-200 hover:dark:bg-slate-950
             animate__animated animate__pulse animate__infinite'
               >
-                More...
+                Read More
               </Link>
             )}
 
@@ -98,7 +98,7 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
                 href={block.explorer}
                 target='_blank'
               >
-                Explore
+                Explorer
               </Link>
             )}
           </div>

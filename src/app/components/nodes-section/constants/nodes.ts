@@ -17,6 +17,8 @@ export const mainnetNodes: Array<NodeCard> = [
     title: 'Cardano',
     pageLink: '/cardano',
     description: 'One of the biggest cryptocurrencies by market cap',
+    explorer:
+      'https://adastat.net/pools/06be20d0da5810fae2f0376dc0a01a31d459c0ca6da8e3ddf58a67d9',
   },
   {
     logo: './images/nodes/axelar.jpg',
@@ -82,6 +84,8 @@ export const testnetNodes: Array<NodeCard> = [
     pageLink: '/lava',
     description:
       'Pairs Providers with DApps for scalable, private and uncensored access to Web3',
+    explorer:
+      'https://lava.explorers.guru/validator/lava@valoper1q7jyftyahuf66jefc36254rldk6je9xkaaseh4',
   },
   {
     logo: './images/nodes/axelar.jpg',
@@ -92,14 +96,6 @@ export const testnetNodes: Array<NodeCard> = [
     description: 'Delivers secure cross-chain communication for Web3',
   },
   {
-    logo: './images/nodes/nibi.png',
-    title: 'Nibiru',
-    link: 'https://nibiru.fi/',
-    explorer:
-      'https://explorer.nibiru.fi/nibiru-itn-3/staking/nibivaloper1f20ayh6pr2yw4g9n9mr76acmj8cxv3jeeurwsc',
-    description: 'Sovereign blockchain, Cosmos Ecosystem family member',
-  },
-  {
     logo: './images/nodes/mantra.svg',
     title: 'Mantra',
     link: 'https://www.mantraomniverse.com/',
@@ -107,14 +103,6 @@ export const testnetNodes: Array<NodeCard> = [
       'https://explorer.testnet.mantrachain.io/mantrachain/validators/mantravaloper1srul3v67t2szqc89me77e0xeagzxua2xzacpv9',
     description:
       'Vertically-integrated and regulatory compliant blockchain ecosystem',
-  },
-  {
-    logo: './images/nodes/islamicCoin.png',
-    title: 'Islamic Coin',
-    explorer:
-      'https://testnet.ping.pub/haqq/staking/haqqvaloper1vzqw946xv3lgsvdyw08pkgkqhuennjv48rqdev',
-    link: 'https://islamiccoin.net',
-    description: 'Community-run network, which has a finite total supply',
   },
   {
     logo: './images/nodes/evmos.png',
@@ -138,6 +126,29 @@ export const testnetNodes: Array<NodeCard> = [
     link: 'https://artela.network/',
     description:
       'Extensible blockchain network enabling developers to build feature rich dApps',
+  },
+  {
+    logo: './images/nodes/juneo.svg',
+    title: 'JUNEO',
+    link: 'https://juneo.com/',
+    description:
+      'The platform for blockchain innovation through unlimited blockchain creation',
+  },
+  {
+    logo: './images/nodes/nibi.png',
+    title: 'Nibiru',
+    link: 'https://nibiru.fi/',
+    explorer:
+      'https://explorer.nibiru.fi/nibiru-itn-3/staking/nibivaloper1f20ayh6pr2yw4g9n9mr76acmj8cxv3jeeurwsc',
+    description: 'Sovereign blockchain, Cosmos Ecosystem family member',
+  },
+  {
+    logo: './images/nodes/islamicCoin.png',
+    title: 'Islamic Coin',
+    explorer:
+      'https://testnet.ping.pub/haqq/staking/haqqvaloper1vzqw946xv3lgsvdyw08pkgkqhuennjv48rqdev',
+    link: 'https://islamiccoin.net',
+    description: 'Community-run network, which has a finite total supply',
   },
   {
     logo: './images/nodes/masa-fin.png',
