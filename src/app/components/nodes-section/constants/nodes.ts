@@ -75,6 +75,12 @@ export const mainnetNodes: Array<NodeCard> = [
     description:
       'Truly decentralized blockchain controlled by thousands of people',
   },
+  {
+    logo: './images/nodes/near.svg',
+    title: 'Near',
+    link: 'https://near.org/',
+    description: 'Blockchain Operating System for an  Open Web',
+  },
 ];
 
 export const testnetNodes: Array<NodeCard> = [
@@ -149,6 +155,12 @@ export const testnetNodes: Array<NodeCard> = [
       'https://testnet.ping.pub/haqq/staking/haqqvaloper1vzqw946xv3lgsvdyw08pkgkqhuennjv48rqdev',
     link: 'https://islamiccoin.net',
     description: 'Community-run network, which has a finite total supply',
+  },
+  {
+    logo: './images/nodes/near.svg',
+    title: 'Near',
+    link: 'https://near.org/',
+    description: 'Blockchain Operating System for an  Open Web',
   },
   {
     logo: './images/nodes/masa-fin.png',
