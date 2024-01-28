@@ -118,15 +118,6 @@ export const testnetNodes: Array<NodeCard> = [
       'A one-stop, highly personalized access point to discover unique Web3 apps built on Evmos',
   },
   {
-    logo: './images/nodes/cascadia.png',
-    title: 'Cascadia',
-    link: 'https://www.cascadia.foundation/',
-    explorer:
-      'https://validator.cascadia.foundation/validators/cascadiavaloper1l5c34aap2p5rrvqyemhf03v0ztn0d8l39c05m6',
-    description:
-      'A web3 platform driving consumer behavior through innovative technologies',
-  },
-  {
     logo: './images/nodes/artela.png',
     title: 'Artela',
     link: 'https://artela.network/',
