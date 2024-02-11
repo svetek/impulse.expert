@@ -13,6 +13,12 @@
 	box-sizing: border-box;
 }
 
+html,
+body {
+	overflow-x: hidden !important;
+	width: 100%;
+}
+
 body {
 	@apply bg-blue-50;
 	@apply dark:bg-slate-950;
