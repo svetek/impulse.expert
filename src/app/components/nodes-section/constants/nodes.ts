@@ -38,6 +38,14 @@ export const mainnetNodes: Array<NodeCard> = [
       'A one-stop, highly personalized access point to discover unique Web3 apps built on Evmos',
   },
   {
+    logo: './images/nodes/nibi.png',
+    title: 'Nibiru',
+    link: 'https://nibiru.fi/',
+    explorer:
+      'https://explorer.nibiru.fi/cataclysm-1/staking/nibivaloper13ajj3qtu49cy8xj3thycal3m4qr0lfkjrxfm9s',
+    description: 'Sovereign blockchain, Cosmos Ecosystem family member',
+  },
+  {
     logo: './images/nodes/islamicCoin.png',
     title: 'Islamic Coin',
     explorer:
@@ -130,14 +138,6 @@ export const testnetNodes: Array<NodeCard> = [
     link: 'https://juneo.com/',
     description:
       'The platform for blockchain innovation through unlimited blockchain creation',
-  },
-  {
-    logo: './images/nodes/nibi.png',
-    title: 'Nibiru',
-    link: 'https://nibiru.fi/',
-    explorer:
-      'https://explorer.nibiru.fi/nibiru-itn-3/staking/nibivaloper1f20ayh6pr2yw4g9n9mr76acmj8cxv3jeeurwsc',
-    description: 'Sovereign blockchain, Cosmos Ecosystem family member',
   },
   {
     logo: './images/nodes/islamicCoin.png',
