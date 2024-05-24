@@ -27,23 +27,9 @@ export default function Footer() {
               tracking-widest tracking-wide lg:px-3 py-2 rounded-md
               text-slate-600 dark:text-gray-300'
           >
-            <span className="font-['KdamThmorPro'] font-semibold mr-1">
+            <span className="font-['KdamThmorPro'] font-semibold">
               Impulse
             </span>
-            by
-            <Link href='https://www.svetek.com' target='_blank'>
-              <Image
-                className='mx-1 mb-1 pointer-events-none select-none'
-                alt='Svetek Logo'
-                width={100}
-                height={30}
-                src={
-                  theme === 'dark'
-                    ? './images/footer/svetek_dark.svg'
-                    : '/images/footer/svetek_light.svg'
-                }
-              ></Image>
-            </Link>
             {`, ${new Date().getFullYear()}`}
           </p>
           <div className='flex space-x-4'>

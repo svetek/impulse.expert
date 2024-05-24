@@ -7,6 +7,7 @@ import ServerSection from './components/server-section/server.section';
 import dynamic from 'next/dynamic';
 
 import { ThemeProvider } from './contexts/ThemeContext';
+import OurPartners from './components/partners/partners.section';
 
 export default function Page() {
   const HeadSection = dynamic(
@@ -71,6 +72,7 @@ export default function Page() {
 
         <section>
           <AboutSection />
+          <OurPartners/>
         </section>
 
         <MonitoringSection />
