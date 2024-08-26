@@ -47,7 +47,7 @@ flex flex-col w-full pb-4 scroll-mt-20'
             </Link>
             <Link
               className="underline header-link font-['KdamThmorPro'] tracking-widest text-gray-800 dark:text-slate-300 px-1 lg:px-3 py-2 rounded-md font-semibold mb-2 sm:mb-0 sm:mx-2"
-              href='https://lava.explorers.guru/validator/lava@valoper1q7jyftyahuf66jefc36254rldk6je9xkaaseh4'
+              href='https://lava-explorer.mellifera.network/lava/staking/lava@valoper1486e3846ejg452ryve0l7sspmumzkv4htsku6c'
               target='_blank'
             >
               Impulse Explorer

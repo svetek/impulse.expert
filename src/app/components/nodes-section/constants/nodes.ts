@@ -9,16 +9,65 @@ export type NodeCard = {
   page?: string;
   invert?: boolean;
   description?: string;
+  staking?: {
+    logo: string;
+    title: string;
+    href: string;
+    height?: number;
+    width?: number;
+  }[];
 };
 
 export const mainnetNodes: Array<NodeCard> = [
+  {
+    logo: './images/nodes/lava.svg',
+    title: 'Lava',
+    pageLink: '/lava',
+    description:
+      'Pairs Providers with DApps for scalable, private and uncensored access to Web3',
+    staking: [
+      {
+        logo: './images/staking/keplr.svg',
+        title: 'Keplr',
+        href: 'https://wallet.keplr.app/chains/lava?modal=staking&chain=lava-mainnet-1&validator_address=lava%40valoper1486e3846ejg452ryve0l7sspmumzkv4htsku6c&step_id=2',
+      },
+      {
+        logo: './images/staking/leap.png',
+        title: 'Leap',
+        href: 'https://cosmos.leapwallet.io/transact/stake/plain?chain=lava&validator=lava@valoper1486e3846ejg452ryve0l7sspmumzkv4htsku6c',
+      },
+      {
+        logo: './images/staking/staking-rewards.png',
+        title: 'StakingRewards',
+        href: 'https://www.stakingrewards.com/stake-app?input=lava&type=dual-staking&providers=impulse;0&secondary-providers=impulse;0',
+      },
+    ],
+  },
   {
     logo: './images/nodes/cardano_logo.png',
     title: 'Cardano',
     pageLink: '/cardano',
     description: 'One of the biggest cryptocurrencies by market cap',
-    explorer:
-      'https://adastat.net/pools/06be20d0da5810fae2f0376dc0a01a31d459c0ca6da8e3ddf58a67d9',
+    staking: [
+      {
+        logo: '/images/staking/cardanoscan.png',
+        title: 'Cardano',
+        href: 'https://cardanoscan.io/pool/06be20d0da5810fae2f0376dc0a01a31d459c0ca6da8e3ddf58a67d9',
+      },
+    ],
+  },
+  {
+    logo: './images/nodes/islamicCoin.png',
+    title: 'Islamic Coin',
+    link: 'https://islamiccoin.net',
+    description: 'Community-run network, which has a finite total supply',
+    staking: [
+      {
+        logo: '/images/staking/haqq.svg',
+        title: 'HAQQ',
+        href: 'https://shell.haqq.network/staking/validator/haqqvaloper1zenrae0nqd0mclna6an3059z66tlrzar5xmkzp',
+      },
+    ],
   },
   {
     logo: './images/nodes/axelar.jpg',
@@ -44,14 +93,6 @@ export const mainnetNodes: Array<NodeCard> = [
     explorer:
       'https://explorer.nibiru.fi/cataclysm-1/staking/nibivaloper13ajj3qtu49cy8xj3thycal3m4qr0lfkjrxfm9s',
     description: 'Sovereign blockchain, Cosmos Ecosystem family member',
-  },
-  {
-    logo: './images/nodes/islamicCoin.png',
-    title: 'Islamic Coin',
-    explorer:
-      'https://shell.haqq.network/staking/validator/haqqvaloper1zenrae0nqd0mclna6an3059z66tlrzar5xmkzp',
-    link: 'https://islamiccoin.net',
-    description: 'Community-run network, which has a finite total supply',
   },
   {
     logo: './images/nodes/canto.svg',

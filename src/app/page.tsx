@@ -63,15 +63,12 @@ export default function Page() {
         </section>
 
         <section>
-          <ServerSection />
-        </section>
-
-        <section>
           <NodesSection />
         </section>
 
         <section>
           <AboutSection />
+          <ServerSection />
           <OurPartners/>
         </section>
 

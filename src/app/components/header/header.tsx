@@ -17,8 +17,12 @@ export default function Header() {
       link: '/#about',
     },
     {
-      title: 'Our Projects',
+      title: 'Mainnets',
       link: '/#mainnets',
+    },
+    {
+      title: 'Testnets',
+      link: '/#testnets',
     },
   ];
   return (

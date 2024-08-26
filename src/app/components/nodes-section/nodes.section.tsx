@@ -61,6 +61,53 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
               {block.description}
             </p>
 
+            {block.staking && (
+              <div className='flex flex-col mt-2'>
+                <p
+                  className='w-full mt-2 md:mt-2 md:text-lg text-sm text-slate-600 
+              dark:text-gray-300 py-2 px-3'
+                >
+                  Stake with us:
+                </p>
+                <div className='flex justify-center space-x-2'>
+                  {block.staking.map((stake, i) => (
+                    <Link
+                      key={i}
+                      href={stake.href}
+                      target='_blank'
+                      className='pointer-events-auto px-2'
+                    >
+                      <Image
+                        src={stake.logo}
+                        alt={stake.title}
+                        width={stake.width ?? 40}
+                        height={stake.height ?? 40}
+                        className='rounded-full
+                      h-[40px]
+                      hover:scale-[1.25]
+                      drop-shadow-[0_0px_5px_rgba(125,125,125,0.6)] dark:drop-shadow-[0_0px_4px_rgba(125,125,125,0.6)]
+                      '
+                      />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {block.explorer && (
+              <Link
+                className='pointer-events-auto mt-2 md:mt-4 md:text-lg text-sm inline-block border border-gray-400 text-slate-600 
+              bg-grey-50 dark:border-gray-500 
+              dark:text-gray-300 py-1 px-3 rounded
+              hover:bg-slate-200 hover:dark:bg-slate-950
+              animate__animated animate__pulse animate__infinite'
+                href={block.explorer}
+                target='_blank'
+              >
+                Explorer
+              </Link>
+            )}
+
             {block.link && (
               <Link
                 href={block.link}
@@ -85,20 +132,6 @@ const getNodesContainer = (title: string, nodes: NodeCard[], id?: string) => {
             animate__animated animate__pulse animate__infinite'
               >
                 Read More
-              </Link>
-            )}
-
-            {block.explorer && (
-              <Link
-                className='pointer-events-auto mt-2 md:mt-4 md:text-lg text-sm inline-block border border-gray-400 text-slate-600 
-              bg-grey-50 dark:border-gray-500 
-              dark:text-gray-300 py-1 px-3 rounded
-              hover:bg-slate-200 hover:dark:bg-slate-950
-              animate__animated animate__pulse animate__infinite'
-                href={block.explorer}
-                target='_blank'
-              >
-                Explorer
               </Link>
             )}
           </div>
