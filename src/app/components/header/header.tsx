@@ -64,7 +64,7 @@ export default function Header() {
             <Link
               key={link}
               href={link}
-              className="header-link font-['KdamThmorPro'] tracking-widest tracking-wide text-gray-800 dark:text-slate-300 px-1 lg:px-3 py-2 rounded-md font-semibold"
+              className="header-link text-center font-['KdamThmorPro'] tracking-widest tracking-wide text-gray-800 dark:text-slate-300 px-1 lg:px-3 py-2 rounded-md font-semibold"
             >
               {title}
             </Link>
