@@ -45,7 +45,7 @@ export default function RootLayout({
         />
         {/* Twitter */}
         <meta name='twitter:card' content='summary_large_image'></meta>
-        <meta name='twitter:site' content='@SvetekLLC'></meta>
+        <meta name='twitter:site' content='@ImpulseExpert'></meta>
         <meta
           name='twitter:title'
           content='Impulse. Web3 Nodes Staking Services'

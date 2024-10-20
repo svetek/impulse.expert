@@ -80,7 +80,7 @@ export default function Header() {
               <FaMedium className='heder-icon h-5 w-5' />
             </Link>
             <Link
-              href='https://twitter.com/SvetekLLC'
+              href='https://twitter.com/ImpulseExpert'
               className='header-link text-gray-800 dark:text-slate-300'
               target='_blank'
             >
@@ -94,7 +94,7 @@ export default function Header() {
               <FaTelegram className='heder-icon h-5 w-5' />
             </Link>
             <Link
-              href='https://github.com/svetek'
+              href='https://github.com/MichaelLLC'
               className='header-link text-gray-800 dark:text-slate-300'
               target='_blank'
             >

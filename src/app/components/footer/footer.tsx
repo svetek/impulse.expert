@@ -41,7 +41,7 @@ export default function Footer() {
               <FaMedium className='footer-icon h-5 w-5' />
             </Link>
             <Link
-              href='https://twitter.com/SvetekLLC'
+              href='https://twitter.com/ImpulseExpert'
               className='text-gray-800 dark:text-slate-300'
               target='_blank'
             >
@@ -55,7 +55,7 @@ export default function Footer() {
               <FaTelegram className='heder-icon h-5 w-5' />
             </Link>
             <Link
-              href='https://github.com/svetek'
+              href='https://github.com/MichaelLLC'
               className='text-gray-800 dark:text-slate-300'
               target='_blank'
             >
