@@ -17,12 +17,12 @@ export default function Header() {
       link: '/#about',
     },
     {
-      title: 'Mainnets',
-      link: '/#mainnets',
+      title: 'Our Projects',
+      link: '/#projects',
     },
     {
-      title: 'Testnets',
-      link: '/#testnets',
+      title: 'Our Partners',
+      link: '/#partners',
     },
   ];
   return (

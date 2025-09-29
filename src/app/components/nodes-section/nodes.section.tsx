@@ -3,13 +3,12 @@
 import Image from 'next/image';
 import './nodes-section.css';
 import Link from 'next/link';
-import { NodeCard, mainnetNodes, testnetNodes } from './constants/nodes';
+import { NodeCard, projects } from './constants/nodes';
 
 export default function NodesSection() {
   return (
     <div className='pb-8'>
-      {getNodesContainer('Our Mainnets', mainnetNodes, 'mainnets')}
-      {getNodesContainer('Our Testnets', testnetNodes, 'testnets')}
+      {getNodesContainer('Our Projects', projects, 'projects')}
     </div>
   );
 }

@@ -10,7 +10,7 @@ export default function OurPartners() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className='z-30 container max-w-[90%] flex flex-col w-full pb-8'>
+    <div id="partners" className='z-30 container max-w-[90%] flex flex-col w-full pb-8 scroll-mt-20'>
       <div
         className='min-w-[90%] rounded-xl 
     p-5 pb-8 m-3 mb-3 flex flex-col items-center text-center bg-white dark:bg-slate-900 border-2 
